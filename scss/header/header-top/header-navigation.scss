@@ -11,25 +11,25 @@
 			height: 100%;
 			display: flex;
 			justify-content: space-around;
-			li {
-				a {
-					padding-top: 19px;
-					padding-bottom: 15px;
-					position: relative;
-					display: flex;
-					align-items: center;
-					justify-content: space-around;
-					font-family: OpenSans-Regular;
-					text-decoration: none;
-					font-weight: 600;
-					color: $white;
-					font-size: 0.81rem;
-					&:hover {
-						color: $pink;
-						border-bottom: 3px solid $pink;
+				li {
+					a {
+						padding-top: 19px;
+						padding-bottom: 15px;
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+						font-family: OpenSans-Regular;
+						text-decoration: none;
+						font-weight: 600;
+						color: $white;
+						font-size: 0.81rem;
+						&:hover {
+							color: $pink;
+							border-bottom: 3px solid $pink;
+						}
 					}
 				}
-			}
 			}	
 		}
 		.nav-social {

@@ -1,10 +1,8 @@
 .search {
+	margin-top: 50px;
 	height: 220px;
 	display: flex;
 	align-items: center;
-// 	@include mq("850", max) {
-// 		& {height: auto;}
-// }
 	form {
 		width: 100%;
 		display: flex;
@@ -21,12 +19,8 @@
 			flex-flow: wrap;
 			align-items: center;
 			height: 110px;
-			// @include mq("850", max) {& {margin-bottom: 200px; margin-top: 10px;} justify-content: space-around;}
-			// @media screen and (min-width: 560px) and (max-width: 770px){ &{ margin-bottom: 30px;}}
 			.search-item {
 				margin-left: 20px;
-				// @include mq("850", max) {& {margin-bottom: 20px; margin-left: 0;}}
-				// @include mq("850", max) {label {font-size: 1rem;}}
 				select {
 					background: transparent url('../img/search/select-arrow.png') right 0 no-repeat;
 					margin-top: 10px;
@@ -38,7 +32,6 @@
 					font-family: OpenSans-Regular;
 					-webkit-appearance: none;
 					appearance: none;
-					// @include mq("850", max) {& {width: 300px; height: 28px;} font-size: 1.1rem;}
 					}
 				input[type="radio"] {
 					display: none;

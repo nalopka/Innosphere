@@ -1,3 +1,7 @@
+@media screen and (min-height: 800px) {
+	.features {height: 80vh;}
+}
+
 @include mq("850", max) {
 	.features {
 		height: auto;

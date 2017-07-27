@@ -5,14 +5,10 @@
 	flex-flow: column wrap;
 	justify-content: space-around;
 	align-items: center;
-	// @include mq("850", max) {
-	// 	p {max-width: 50%;}
-	// }
 	.footer-main {
 		display: flex;
 		align-items: center;
 		flex-flow: column wrap;
-
 		.footer-links {
 			margin-bottom: 5px;
 			a {
@@ -22,9 +18,6 @@
 				background-color: $white;
 				background-size: cover;
 				margin-right: 10px;
-				// @include mq("850", max) {
-				// 	& {height: 30px; width: 30px;}
-				// }
 			}
 			a:first-of-type { background-image: url('../img/team-section/team-block-social/twitter.png'); }
 			a:nth-of-type(2) { background-image: url('../img/team-section/team-block-social/facebook.png'); }

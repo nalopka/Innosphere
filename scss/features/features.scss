@@ -1,7 +1,5 @@
 .features { 	
 	height: 100vh;
-	// @include mq("850", max) {& {height: auto;}}
-	// @include mq("850", max) {.container {width: 100%;}}
 	.features-header {
 		margin-top: 10%;
 		h2 {
@@ -20,7 +18,6 @@
 	}
 	.features-photobox {
 		position: relative;
-		// @include mq("850", max) {margin-bottom: 70px;}
 		h2 {
 			margin-top: 5%;
 			text-align: center;
@@ -33,11 +30,9 @@
 			justify-content: space-between;
 			margin-top: 5%;
 			height: 372px;
-			// @include mq("850", max) {& {flex-flow: column; height: 1230px;}}
 			.photobox-block1 {
 				position: relative;
 				@include flexbox("", space-between, column);
-				// @include mq("850", max) {width: 100%;height: 400px;}
 				width: 285px;
 				height: 100%;
 				.photobox-item1 {
@@ -45,30 +40,25 @@
 					background: $white url("../img/features/photobox/photobox-block1/image1.png") 0 0 no-repeat;
 					width: 100%;
 					height: 48%;	
-					// @include mq("850", max) {background-size: cover;}
 				}
 				.photobox-item2 {
 					background: $white url("../img/features/photobox/photobox-block1/image2.png") 0 0 no-repeat;
 					width: 100%;
 					height: 48%;
-					// @include mq("850", max) {background-size: cover;}
 				}
 			}
 			.photobox-block2 {
 				width: 390px;
-				// @include mq("850", max) {width: 100%; height: 400px;}
 				height: 100%;
 				.photobox-item1 {
 					height: 100%;
 					width: 100%;	
 					background: $white url("../img/features/photobox/photobox-block2/image1.png") left top no-repeat;
-					// @include mq("850", max) {background-size: cover;}
 				}
 			}
 			.photobox-block3 {
 				width: 105px;
 				height: 100%;
-				// @include mq("850", max) {display: none;}
 				.photobox-item1 {
 					height: 100%;
 					width: 100%;
@@ -81,18 +71,15 @@
 				flex-direction: column;
 				width: 185px;
 				height: 100%;
-				// @include mq("850", max) {width: 100%;height: 400px;}
 				.photobox-item1 {
 					height: 49%;
 					width: 100%;
 					background: $white url("../img/features/photobox/photobox-block4/image1.png") 0 0 no-repeat;
-					// @include mq("850", max) {background-size: cover;}
 				}
 				.photobox-item2 {
 					height: 49%;
 					width: 100%;
 					background: $white url("../img/features/photobox/photobox-block4/image2.png") 0 0 no-repeat;
-					// @include mq("850", max) {background-size: cover;}
 				}
 			}
 			.photobox-item1,
@@ -126,7 +113,6 @@
 	background-color: rgba(black, 0.5);
 	opacity: 0;
 	transition: 0.5s ease;
-	// @include mq("850", max) {opacity: 1;}
 		p { 
 			font-size: 0.85rem;
 			padding-left: 10%; }
