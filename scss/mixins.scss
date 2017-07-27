@@ -1,0 +1,55 @@
+
+// FLEXBOX
+@mixin flexbox($flex1, $flex2, $flex3) {
+	display: flex;
+	align-items: $flex1;
+	justify-content: $flex2;
+	flex-direction: $flex3;
+}
+
+// @MEDIA
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "850":          850px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+
+// SLIDER BGIMAGE
+$slider-list: (
+    "Ansible",
+    "Booking",
+    "Cranford",
+    "Dribbble",
+    "Gizmodo",
+    "ibex",
+    "LinkedIn",
+    "Mixpanel",
+    "Pinterest",
+    "Textbit"
+
+);
+@mixin slider-bg {
+    @each $item in $slider-list {
+        .sponsors-#{$item} {
+            background: transparent url("../img/testimonials/logos/#{$item}.png") center no-repeat;
+        }
+    }
+}

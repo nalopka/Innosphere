@@ -1,0 +1,37 @@
+@include mq("tablet-wide", max) {
+		.feedback {
+			height: 100%;
+			.container {
+				flex-flow: column wrap; 
+				width: 100%;
+				form {
+					flex-flow: row wrap; 
+					width: 100%; 
+					align-items: center;
+					textarea {
+						width: 302px;
+						@media screen and (min-width: 560px) and (max-width: 1023px) { width: 90%;}
+					}
+					button {
+						bottom: -80px; 
+						margin-bottom: 20px; 
+						left: 8%;
+					}
+				}
+				.feedback-contacts {
+					margin-top: 70px; 
+					margin-bottom: 30px; 
+					width: auto;
+				}
+			}
+		}
+	}
+
+
+
+
+@media screen and (min-height:800px) {
+	.feedback {
+		height: 60vh;
+	}
+}

@@ -1,0 +1,67 @@
+
+.header-navigation {
+		background-color: $light-black;
+		height: 55px;
+		display: flex;	
+		justify-content: space-between;
+		.nav-menu {
+			width: 85%;
+			ul {
+			list-style: none;
+			height: 100%;
+			display: flex;
+			justify-content: space-around;
+			li {
+				a {
+					padding-top: 19px;
+					padding-bottom: 15px;
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+					font-family: OpenSans-Regular;
+					text-decoration: none;
+					font-weight: 600;
+					color: $white;
+					font-size: 0.81rem;
+					&:hover {
+						color: $pink;
+						border-bottom: 3px solid $pink;
+					}
+				}
+			}
+			}	
+		}
+		.nav-social {
+			width: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			ul {
+				margin-right: 20px;
+				list-style:none;
+				display: flex;
+				width: 100%;
+				justify-content: space-around;
+				.social-fb {
+					background: url("../img/header/header-navigation/header-navitagion-social/Facebook.png") 50% 50% no-repeat;
+					padding: 17px 17px;
+					background-size: 80%;
+				}	
+				.social-in {
+					background: url("../img/header/header-navigation/header-navitagion-social/linkedin.png") 50% 50% no-repeat;
+					padding: 17px 17px;
+					background-size: 100%;
+				}	
+				.social-be {
+					background: url("../img/header/header-navigation/header-navitagion-social/behance.png") 50% 55% no-repeat;
+					padding: 17px 17px;
+					background-size: 90%;
+				}	
+			}
+		}
+	}
+.active-link {
+	border-bottom: 3px solid $pink;
+}
+

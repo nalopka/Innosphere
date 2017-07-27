@@ -1,0 +1,15 @@
+.header {
+	border: 1px solid black;
+	position: relative;
+	height: 100vh;
+	background: black url("../img/header/bg_image.png") no-repeat;
+	background-size: cover;
+	
+	@import "header-top/header-top";
+	@import "header-main/header-main";
+	@import "header-search/header-search";
+	@import "header-top/header-top-mobile/header-top-mobile";
+}
+@include mq("tablet-wide", max) {
+	.header {height: 80vh; background-position: 50% 50%;}
+}

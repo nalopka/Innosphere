@@ -1,0 +1,25 @@
+@include mq("850", max) {
+.team-section {
+	height: auto;
+	.team-block {
+		.team-block-item {
+			width: 100%; 
+			margin-bottom: 70px;
+			h3, h4, p {text-align: center;}
+			&:first-of-type {background-position: top center;}
+			&:nth-of-type(2) {background-position: top center;}
+			&:last-of-type {background-position: top center;}
+			.team-block-social {
+				top: 0;
+				a {width: 30px; height: 30px; display: flex; margin-bottom: 5px;}
+			}
+		}
+	}
+}
+}
+
+@media screen and (min-height:800px) {
+	.team-section {
+		height: 80vh;
+	}
+}

@@ -1,0 +1,16 @@
+@include mq("850", max) {
+	.search {
+		height: auto;
+		form {
+			.form-item {
+				@include mq("850", max) {& {margin-bottom: 200px; margin-top: 10px;} justify-content: space-around;}
+				@media screen and (min-width: 560px) and (max-width: 770px){ &{ margin-bottom: 30px;}}
+				.search-item {
+					margin-bottom: 20px; margin-left: 0;
+					label {font-size: 1rem;}
+					select {width: 300px; height: 28px; font-size: 1.1rem;}
+				}
+			}
+		}
+	}
+}

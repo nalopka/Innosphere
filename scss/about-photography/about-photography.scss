@@ -1,0 +1,85 @@
+.about-photography {
+	height: 100vh;
+	width: 100%;
+	h2 {
+		@include flexbox("",space-around,"");
+		font-size: 1.875rem;
+		font-family: OpenSans-Light;
+		line-height: 26px;
+		margin-bottom: 3%;
+		@include mq("tablet-wide", max) {
+			& {
+				margin: 30px 0;
+				font-size: 1.3rem;
+			}
+	}
+}
+	.about-photography-main {
+		position: relative;
+		background: white url('../img/about-photography/background.png') 0 0 no-repeat;
+		background-size: cover;
+		height: 80%;
+		&:after {
+			z-index: 2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			background-color: rgba(black, 0.5);
+			width: 100%;
+			height: 100%;
+		}
+		
+		.container {
+			position: relative;
+			z-index: 3;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			@include mq("tablet-wide", max) {
+				& {
+					width: 100%;
+					font-size: 0.8rem;
+				}
+			}
+			
+			h3 {
+			font-family: OpenSans-ExtraBold;
+			font-size: 3.125rem;
+			color: $white;
+			margin-bottom: 5%;
+			}
+			p {
+				width: 80%;
+				color: #d5d4d4;
+				font-size: 1.125rem;
+				font-family: OpenSans-Light;
+				line-height: 35px;
+				text-align: center;
+			}
+			@include mq("tablet-wide", max) {
+				h3 {	
+					margin-top: 20px;
+					font-size: 1.2rem;
+					text-align: center;
+				}
+				p { 
+					font-size: 1.3rem; }
+			}
+			button {
+				margin-top: 20px;
+				height: 35px;
+				width: 118px;
+				position: relative;
+				margin-bottom: 20px;
+			}
+		}
+		
+	}
+	
+}
+@include mq("850", max) {
+	.about-photography { height: auto;}
+}

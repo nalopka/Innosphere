@@ -1,0 +1,16 @@
+@include mq("850", max) {
+	.footer {
+		p {max-width: 50%; text-align: center;}
+		.footer-main {
+			.footer-links {
+				a {height: 30px; width: 30px;}
+			}
+		}
+	}
+}
+
+@media screen and (min-height:800px) {
+	.footer {
+		height: 30vh;
+	}
+}

@@ -1,0 +1,32 @@
+div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer {
+	margin: 0;
+	padding: 0;
+}
+p, h1, h2, h3, h4, span {
+	cursor: default;
+}
+html {
+	font-size: 16px;
+}
+
+.container {
+		width: 990px;
+		margin: 0 auto;
+	}
+
+@import "../UI/fonts/fonts";
+@import "../UI/color/color";
+@import "../UI/decor_elements/buttons";
+@import "mixins";
+
+
+@import "header/header";
+@import "search/search";
+@import "features/features";
+@import "about-photography/about-photography";
+@import "testimonials/testimonials";
+@import "team-section/team-section";
+@import "location-map/location-map";
+@import "feedback/feedback";
+@import "footer/footer";
+

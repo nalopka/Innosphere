@@ -1,0 +1,77 @@
+.search {
+	height: 220px;
+	display: flex;
+	align-items: center;
+// 	@include mq("850", max) {
+// 		& {height: auto;}
+// }
+	form {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+		label, p {
+			font-family: OpenSans-Semibold;
+			font-size: 0.81rem;
+		}
+		.form-item {
+			width: 100%;
+			display: flex;
+			flex-flow: wrap;
+			align-items: center;
+			height: 110px;
+			// @include mq("850", max) {& {margin-bottom: 200px; margin-top: 10px;} justify-content: space-around;}
+			// @media screen and (min-width: 560px) and (max-width: 770px){ &{ margin-bottom: 30px;}}
+			.search-item {
+				margin-left: 20px;
+				// @include mq("850", max) {& {margin-bottom: 20px; margin-left: 0;}}
+				// @include mq("850", max) {label {font-size: 1rem;}}
+				select {
+					background: transparent url('../img/search/select-arrow.png') right 0 no-repeat;
+					margin-top: 10px;
+					border-radius: 0;
+					width: 223px;
+					height: 28px;
+					border-color: #b3b3b3;
+					padding-left: 13px;
+					font-family: OpenSans-Regular;
+					-webkit-appearance: none;
+					appearance: none;
+					// @include mq("850", max) {& {width: 300px; height: 28px;} font-size: 1.1rem;}
+					}
+				input[type="radio"] {
+					display: none;
+					&:checked+label {
+						margin-top: 10px;
+						background-color: #2f343a;
+						color: white;
+					}
+
+				}
+				.adult-content-item {
+					display: inline-flex;
+					align-items: center;
+					justify-content: space-around;
+					width: 88px;
+					height: 28px;
+					border: 1px solid #b3b3b3;
+					&:last-of-type {
+						margin-left: -5px; /* Поправить, минусовые маргины - зло */
+					}
+				}
+			button {
+				margin-top:28px;
+				font-size: 0.75rem;
+				position: relative;
+				width: 270px;
+				height: 34px;
+				}
+			}
+
+
+		}
+		
+	}
+}
+@import "_media-search";

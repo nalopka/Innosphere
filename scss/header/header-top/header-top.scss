@@ -1,0 +1,15 @@
+.header-top {
+		margin: auto;
+		height: 182px;
+		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		
+		@import "header-contacts";
+		@import "header-navigation";
+		
+}
+
+@include mq("tablet-wide", max) {
+	.header-top {display: none;}
+}

@@ -1,0 +1,43 @@
+.footer {
+	height: 50vh;
+	background-color: $p_lightblack;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: center;
+	// @include mq("850", max) {
+	// 	p {max-width: 50%;}
+	// }
+	.footer-main {
+		display: flex;
+		align-items: center;
+		flex-flow: column wrap;
+
+		.footer-links {
+			margin-bottom: 5px;
+			a {
+				display: inline-block;
+				height: 40px;
+				width: 40px;
+				background-color: $white;
+				background-size: cover;
+				margin-right: 10px;
+				// @include mq("850", max) {
+				// 	& {height: 30px; width: 30px;}
+				// }
+			}
+			a:first-of-type { background-image: url('../img/team-section/team-block-social/twitter.png'); }
+			a:nth-of-type(2) { background-image: url('../img/team-section/team-block-social/facebook.png'); }
+			a:nth-of-type(3) { background-image: url('../img/team-section/team-block-social/pinterest.png'); }
+			a:last-of-type { background-image: url('../img/team-section/team-block-social/dribbble.png'); }
+
+		}
+		p {
+			font-size: 0.95rem;
+			color: #999999;
+			font-family: OpenSans-Light;
+		}
+	}
+}
+@import "_media-footer";
+

@@ -1,0 +1,33 @@
+.header-search {
+	position: absolute;
+	width: 315px;
+	height: 55px;
+	bottom: 0;
+	background-color: $light-black;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding-left: 10%;
+		color: $white;
+		text-decoration: none;	
+		font-family: OpenSans-Bold;
+		height: 100%;
+		width: 90%;
+		&:before {
+			left: 0;
+			background: url("../img/header/header-search/search-white.svg") center no-repeat;
+			position: absolute;
+			content: "";
+			width: 55px;
+			height: 100%;
+			background-size: 40%;
+			background-color: black;
+		}
+	}
+}
+@include mq("tablet-wide", max) {
+	.header-search {
+		display: none;
+	}
+}

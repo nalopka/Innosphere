@@ -1,0 +1,7 @@
+.location-map {
+	height: 50vh;
+	width: 100%;
+}
+@include mq("phone-wide", max) {
+	.location-map {display: none;}
+}

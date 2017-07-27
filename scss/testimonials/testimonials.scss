@@ -1,0 +1,61 @@
+@import "slider";
+.testimonials {
+	height: 100vh;
+	h3 {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: 1.875rem;
+		font-family: OpenSans-Light;
+		text-align: center;
+		font-weight: normal;
+	}
+	.container {
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.testimonial-item {
+		.testimonials-review {
+			display: flex;
+			justify-content: space-between;
+			height: 250px;
+			.testimonials-review-item {
+				position: relative;
+				background-repeat: no-repeat;
+				width: 45%;
+				span {
+					position: absolute;
+					bottom: 0; 
+					right: 0;
+					padding-right: 20%;
+					padding-bottom: 6%;
+					line-height: 30px;
+					font-size: 0.7rem;
+					height: 100px;
+					font-family: OpenSans-Bold;
+					display: flex;
+					align-items: flex-end;
+					background-size: 15%;
+				}
+				p {
+					font-size: 1.125rem;
+					font-family: OpenSans-Light;
+					color: #999999;
+					margin-left: 18%;
+					margin-top: 5%;
+				}
+				&:first-of-type {
+					background-image: url("../img/testimonials/comma-pink.png");
+					span {background: url("../img/testimonials/image1.png") right bottom no-repeat;
+						}
+				}
+				&:last-of-type {
+					background-image: url("../img/testimonials/comma-blue.png");
+					span {background: url("../img/testimonials/image2.png") right bottom no-repeat;}
+				}
+			}
+		}
+
+	}
+	
+}
+@import "_media-testimonials";

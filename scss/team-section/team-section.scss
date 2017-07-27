@@ -1,0 +1,95 @@
+// @media внизу
+.team-section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	// @include mq("850", max) {
+	// 	& {height: auto;}
+	// }
+	.container {
+		height: 80%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		h2 {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: 1.875rem;
+		font-family: OpenSans-Light;
+		text-align: center;
+		font-weight: normal;
+		}
+	}
+	.team-block {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		.team-block-item {
+			position: relative;
+			padding-top: 200px;
+			width: 32%;
+			// @include mq("850", max) {
+			// 	& { 
+			// 		width: 100%; margin-bottom: 70px;}
+			// }
+			h3 {
+				margin-top: 10px;
+				font-size: 1.875rem;
+				font-family: OpenSans-Semibold;
+				text-align: left;
+				line-height: 26px;
+
+			}
+			h4 {
+				font-size: 1.125rem;
+				font-family: OpenSans-Light;
+				font-style: italic;
+				font-weight: normal;
+				color: $contacts_grey;
+				padding: 8px 0 10px 0;
+			}
+			p {
+				color: $p_lightblack;
+				font-size: 0.93rem;
+				line-height: 25px;
+				font-family: OpenSans-Light;
+			}
+			// @include mq("850", max) { h3, h4, p {text-align: center;}}
+
+			&:first-of-type {background:transparent url('../img/team-section/team-block-item/image1.png') left top no-repeat;}
+				// @include mq("850", max) {background-position: top center;}}
+
+
+			&:nth-of-type(2) {background:transparent url('../img/team-section/team-block-item/image2.png') left top no-repeat;}
+				// @include mq("850", max) {background-position: top center;}}
+			
+			&:last-of-type { background:transparent url('../img/team-section/team-block-item/image3.png') left top no-repeat;}
+				// @include mq("850", max) {background-position: top center;}}
+		
+		.team-block-social {
+			position: absolute;
+			bottom: -60px;
+			// @include mq("850", max) {
+			// 	& {top: 0; }
+			// }
+			a {
+					margin-right: 10px;
+				 	display: inline-block;
+				 	width: 40px;
+				 	height: 40px;
+				 	background-color: $white;
+				 	background-repeat: no-repeat;
+				 	background-size: 100%;
+				 	// @include mq("850", max) {
+				 	// 	& {width: 30px; height: 30px; display: flex; margin-bottom: 5px; }
+				 	// }
+			}
+			a:first-of-type { background-image: url('../img/team-section/team-block-social/twitter.png'); }
+			a:nth-of-type(2) { background-image: url('../img/team-section/team-block-social/facebook.png'); }
+			a:nth-of-type(3) { background-image: url('../img/team-section/team-block-social/pinterest.png'); }
+			a:last-of-type { background-image: url('../img/team-section/team-block-social/dribbble.png'); }
+			}
+		}
+	}
+}
+@import "media-team-section";
