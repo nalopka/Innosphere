@@ -1,3 +1,7 @@
+.container {
+	width: 990px;
+	margin: 0 auto;
+	}
 .pink-button {
 	position: absolute;
 	background-color: $pink;
@@ -14,6 +18,8 @@
 				left: 0;
 			}
 }
+
+
 .upper-text {
 	text-transform: uppercase;
 }

@@ -18,15 +18,15 @@
 	display: none;
 	.contacts-item {
 		width: 70%;
-		margin-bottom: 10px;
+		padding-bottom: 10px;
 		text-align: center;
 		color: white;
 		font-family: Opensans-regular;
-		h4 {font-size: 1.2rem;}
+		h4 {font-size: 1.2rem; padding-bottom: 10px;}
 		p {font-family: Opensans-light;}
-		a {display: inline-block; width: 30%; height: 40px;
+		a {display: inline-block; width: 30%; height: 40px; color: $white; text-decoration: none; width: 100%;
 		}
-		&:last-of-type{ max-width: 50%; margin-top: 10px}
+		&:last-of-type{ max-width: 50%; margin-top: 10px; a{width: 30%;}}
 		.social-fb {
 				background: url("../img/header/header-navigation/header-navitagion-social/Facebook.png") 50% 50% no-repeat;
 				background-size: 80%;

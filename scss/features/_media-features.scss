@@ -4,10 +4,13 @@
 
 @include mq("850", max) {
 	.features {
+		padding-top: 25px;
+		padding-bottom: 25px;
 		height: auto;
 		.container {width: 100%;}
 		.features-photobox {
 			margin-bottom: 70px;
+			h2 { margin: 50px 0;}
 			.photobox {
 				flex-flow: column; 
 				height: 1230px;

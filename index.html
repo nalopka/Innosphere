@@ -6,10 +6,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjlxXUJqoZBod7l-7Mym8sqUz-DvCXeCE&callback=myMap"
     async defer></script>
-    <script src="script/testimonials/slider.js"></script>
+    <!-- <script src="script/testimonials/slider.js"></script>
 	<script src="script/header-top-mobile/menuSwitch.js"></script>
     <script src="script/location-map/location-map.js"></script>
-    <script src="script/smoothscroll.js"></script>
+    <script src="script/smoothscroll.js"></script> -->
 
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width">
@@ -18,13 +18,14 @@
 </head>
 <body>
 	<header class="header" id="header">
-	<div class="header-top-mobile">
-		<a href="#search" class="search"></a>
+	<div class="header-top-mobile ">
+		<a href="#search" class="search-menu"></a>
 		<div class="menu">
 			<div class="menu-container link" data-link="link-menu">
-				<span class="bar1"></span>
+				<!-- <span class="bar1"></span>
 				<span class="bar2"></span>
-				<span class="bar3"></span>
+				<span class="bar3"></span> -->
+				<div class="menu-mobile"></div>
 			</div>
 
 			<div class="mobile-menu" id="dropMenu" data-link-dest="link-menu">
@@ -41,7 +42,7 @@
 			</div>
 
 		</div>
-		<div class="header-about link" data-link="link-about">
+		<!-- <div class="header-about link" data-link="link-about">
 			<div class="contacts" data-link-dest="link-about">
 				<div class="contacts-item">	
 					<h4 class="contact_office">Visit our office</h4>
@@ -49,7 +50,7 @@
 				</div>
 				<div class="contacts-item">
 					<h4 class="contact_phone">Contact us via phone</h4>
-					<p>442079460041</p>
+					<a href="tel:+44 20 7946 0041 3685">+44 20 7496 0041 3685</a>
 				</div>
 				<div class="contacts-item">
 					<h4 class="contact_email">Ask us questions</h4>
@@ -61,7 +62,7 @@
 					<a class="social-be" href="#"></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
 
 	</div>
@@ -73,8 +74,8 @@
 						<p>2945 Rinehart Road, Sunrise</p>
 					</div>
 					<div class="header-contacts-item">
-						<h4 class="contact_phone">Contact us via phone</h4>
-						<a href="tel:+44 20 7946 0041 3685">+44 20 7946 0041 3685</a>
+						<h4 class=c"ontact_phone">Contact us via phone</h4>
+						<a href="tel:+44 20 7946 0041 3685">+44 20 7496 0041 3685</a>
 					</div>
 					<div class="header-contacts-item">
 						<h4 class="contact_email">Ask us questions</h4>
@@ -85,13 +86,13 @@
 					<div class="nav-menu">
 						<ul  class="upper-text">
 							<li><a href="#header">homepage</a></li>
-							<li><a href="#header">search</a></li>
-							<li><a href="#header" class="active-link">recent images</a></li>
-							<li><a href="#header">about</a></li>
-							<li><a href="#header">testimonials</a></li>
-							<li><a href="#header">sponsors</a></li>
-							<li><a href="#header">team</a></li>
-							<li><a href="#header">contact</a></li>
+							<li><a href="#search">search</a></li>
+							<li><a href="#features" class="active-link">recent images</a></li>
+							<li><a href="#about-photography">about</a></li>
+							<li><a href="#testimonials">testimonials</a></li>
+							<li><a href="#sponsors">sponsors</a></li>
+							<li><a href="#team-section">team</a></li>
+							<li><a href="#feedback">contact</a></li>
 						</ul>
 					</div>
 					<div class="nav-social">
@@ -188,7 +189,7 @@
 		</div>
 	</section>
 
-	<section class="features">
+	<section class="features" id="features">
 		<div class="container">
 			<div class="features-header">
 				<h2>Over 40 Million Stock Photos, Vectors, Videos, and Music Tracks</h2>
@@ -247,7 +248,7 @@
 		</div>
 	</section>
 
-	<section class="about-photography">
+	<section class="about-photography" id="about-photography">
 		<h2>About Stock Photography</h2>
 		<div class="about-photography-main">
 			<div class="container">
@@ -258,7 +259,7 @@
 		</div>
 	</section>
 
-	<section class="testimonials">
+	<section class="testimonials" id="testimonials">
 		<div class="container">
 			<div class="testimonial-item">
 				<h3>Hear what our customers are saying</h3>
@@ -297,7 +298,7 @@
 		</div>
 	</section>
 
-	<section class="team-section">
+	<section class="team-section" id="team-section">
 		<div class="container">
 			<h2>Meet our team</h2>
 			<div class="team-block">
@@ -341,7 +342,7 @@
 	<section class="location-map" id="map" onload="myMap">
 	</section>
 
-	<section class="feedback">
+	<section class="feedback" id="feedback">
 		<h2>Get in touch with us</h2>
 		<div class="container">
 			<form action="">
@@ -378,7 +379,7 @@
 		</div>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="footer-main">
 			<div class="footer-links">
 				<a href="#"></a>
@@ -389,5 +390,10 @@
 			<p>© 2015 Innosphere - All rights reserved - made by Vid Kraljić Radulović</p>
 		</div>
 	</footer>
+
+	<script src="script/testimonials/slider.js"></script>
+	<script src="script/header-top-mobile/menuSwitch.js"></script>
+    <script src="script/location-map/location-map.js"></script>
+    <script src="script/smoothscroll.js"></script>
 </body>
 </html>
