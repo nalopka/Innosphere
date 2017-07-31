@@ -3,7 +3,6 @@
 	top: 45%;
 	height: 172px;
 	width: 462px;
-	// @include mq("phone-wide", max) { width: 100%; height: 250px; top: 20%;}
 	.header-main-text {
 		height: 100%;
 		width: 100%;
@@ -14,7 +13,6 @@
 		h2, p {
 			width: 85%;
 			margin: 0 auto;
-			// @include mq("phone-wide", max) {text-align: center;}
 		}
 		h2 {
 		font-family: OpenSans-Semibold;
