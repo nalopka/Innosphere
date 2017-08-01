@@ -6,38 +6,39 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjlxXUJqoZBod7l-7Mym8sqUz-DvCXeCE&callback=myMap"
     async defer></script>
-    <!-- <script src="script/testimonials/slider.js"></script>
-	<script src="script/header-top-mobile/menuSwitch.js"></script>
-    <script src="script/location-map/location-map.js"></script>
-    <script src="script/smoothscroll.js"></script> -->
-
+    <script src="script/in-view.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width">
 	<meta name="format-detection" content="telephone=no"> <!-- turn off highlights numbers on mobile -->
 	<title>Innosphere</title>
 </head>
 <body>
+	<nav class="fixed-menu">
+		<a href="#header"></a>
+		<a href="#search"></a>
+		<a href="#features"></a>
+		<a href="#about-photography"></a>
+		<a href="#testimonials"></a>
+		<!-- <a href="#sponsors"></a> -->
+		<a href="#team-section"></a>
+		<a href="#feedback"></a>
+	</nav>
 	<header class="header" id="header">
 	<div class="header-top-mobile ">
 		<a href="#search" class="search-menu"></a>
-		<div class="menu">
-			<div class="menu-container link" data-link="link-menu">
-				<!-- <span class="bar1"></span>
-				<span class="bar2"></span>
-				<span class="bar3"></span> -->
-				<div class="menu-mobile"></div>
-			</div>
+		<div class="menu link" data-link="link-menu">
 
+			<div class="menu-container"></div>
 			<div class="mobile-menu" id="dropMenu" data-link-dest="link-menu">
 				<ul class="upper-text">
-					<li><a href="#header">homepage</a></li>
-					<li><a href="#header">search</a></li>
-					<li><a href="#header" class="active-link">recent images</a></li>
-					<li><a href="#header">about</a></li>
-					<li><a href="#header">testimonials</a></li>
-					<li><a href="#header">sponsors</a></li>
-					<li><a href="#header">team</a></li>
-					<li><a href="#header">contact</a></li>
+					<li><a href="#header" class="active-link">homepage</a></li>
+					<li><a href="#search">search</a></li>
+					<li><a href="#features">recent images</a></li>
+					<li><a href="#about-photography">about</a></li>
+					<li><a href="#testimonials">testimonials</a></li>
+					<li><a href="#sponsors">sponsors</a></li>
+					<li><a href="#team-section">team</a></li>
+					<li><a href="#feedback">contact</a></li>
 				</ul>
 			</div>
 
@@ -63,8 +64,6 @@
 				</div>
 			</div>
 		</div> -->
-		
-
 	</div>
 		<div class="container">
 			<div class="header-top">
@@ -74,7 +73,7 @@
 						<p>2945 Rinehart Road, Sunrise</p>
 					</div>
 					<div class="header-contacts-item">
-						<h4 class=c"ontact_phone">Contact us via phone</h4>
+						<h4 class="contact_phone">Contact us via phone</h4>
 						<a href="tel:+44 20 7946 0041 3685">+44 20 7496 0041 3685</a>
 					</div>
 					<div class="header-contacts-item">
@@ -85,9 +84,9 @@
 				<nav class="header-navigation">
 					<div class="nav-menu">
 						<ul  class="upper-text">
-							<li><a href="#header">homepage</a></li>
+							<li><a href="#header"  class="active-link">homepage</a></li>
 							<li><a href="#search">search</a></li>
-							<li><a href="#features" class="active-link">recent images</a></li>
+							<li><a href="#features">recent images</a></li>
 							<li><a href="#about-photography">about</a></li>
 							<li><a href="#testimonials">testimonials</a></li>
 							<li><a href="#sponsors">sponsors</a></li>
@@ -117,12 +116,12 @@
 		</div>
 	</header>
 
-	<section class="search" id="search">
+	<section class="search section" id="search">
 		<div class="container">
 			<form action="">
 				<div class="form-item">
 					<div class="search-item">
-						<label for="categories">Categories</label><br>
+						<label for="categories">Categories</label>
 						<select id="categories">
 							<option value="categories-item1" selected>Architecture</option>
 							<option value="categories-item2">Mobile</option>
@@ -131,14 +130,14 @@
 					</div>
 
 					<div class="search-item">
-						<label for="license">License type</label><br>
+						<label for="license">License type</label>
 						<select id="license">
 							<option value="license-item1">Creative</option>
 							<option value="license-item2">Another creative</option>
 						</select>
 					</div>
 					<div class="search-item">
-						<label for="image-size">Image Size</label><br>
+						<label for="image-size">Image Size</label>
 						<select id="image-size">
 							<option value="image-size-item1">XXXL</option>
 							<option value="image-size-item2">XXL</option>
@@ -146,7 +145,7 @@
 					</div>
 
 					<div class="search-item">
-						<label for="search-color">Color</label><br>
+						<label for="search-color">Color</label>
 						<select id="search-color">
 							<option value="search-color-1">HEX    #F6546A</option>
 							<option value="search-color-2">HEX    #335786</option>
@@ -156,7 +155,7 @@
 					
 				<div class="form-item">
 					<div class="search-item">
-						<label for="browse">Browse</label><br>
+						<label for="browse">Browse</label>
 						<select id="browse">
 							<option value="browse-item1">Most Viewed</option>
 							<option value="browse-item2">Rating</option>
@@ -164,7 +163,7 @@
 					</div>
 
 					<div class="search-item">
-						<label for="search-location">Location</label><br>
+						<label for="search-location">Location</label>
 						<select id="search-location">
 							<option value="location-item1">Worldwide</option>
 							<option value="location-item2">Local</option>
@@ -189,66 +188,79 @@
 		</div>
 	</section>
 
-	<section class="features" id="features">
+	<section class="features section" id="features">
 		<div class="container">
 			<div class="features-header">
 				<h2>Over 40 Million Stock Photos, Vectors, Videos, and Music Tracks</h2>
-				<p>Search for images anywhere using our award-winning iPad®, iPhone®, and Android®, apps. Funtional enough <br> to use alone, beautiful enough to show off to clients.</p>
+				<p>Search for images anywhere using our award-winning iPad®, iPhone®, and Android®, apps. Funtional enough to use alone, beautiful enough to show off to clients.</p>
 			</div>
 			<div class="features-photobox">
 				<h2>Recently uploaded</h2>
 				<div class="photobox">
-					<div class="photobox-block1">
-						<div class="photobox-item1">
+
+					<div class="photobox-block">
+						<div class="photobox-item">
 							<div class="addition">
 								<p>OLD MAN FROM INDIA</p>
-								<p><em>by Frank Tucker</em></p>
+								<p>by Frank Tucker</p>
 							</div>
 						</div>
-						<div class="photobox-item2">
+						<div class="photobox-item">
 							<div class="addition">
 								<p>OLD MAN FROM INDIA</p>
-								<p><em>by Frank Tucker</em></p>
+								<p>by Frank Tucker</p>
 							</div>
+						</div>
+
+					</div>
+
+					<div class="photobox-block">
+
+						<div class="photobox-item">
+							<div class="addition">
+								<p>OLD MAN FROM INDIA</p>
+								<p>by Frank Tucker</p>
+							</div>
+
 						</div>
 					</div>
-					<div class="photobox-block2">
-						<div class="photobox-item1">
+
+					<div class="photobox-block">
+
+						<div class="photobox-item">
 							<div class="addition">
 								<p>OLD MAN FROM INDIA</p>
-								<p><em>by Frank Tucker</em></p>
+								<p>by Frank Tucker</p>
 							</div>
 						</div>
+
 					</div>
-					<div class="photobox-block3">
-						<div class="photobox-item1">
+
+					<div class="photobox-block">
+
+						<div class="photobox-item">
 							<div class="addition">
 								<p>OLD MAN FROM INDIA</p>
-								<p><em>by Frank Tucker</em></p>
+								<p>by Frank Tucker</p>
 							</div>
 						</div>
+
+						<div class="photobox-item">
+							<div class="addition">
+								<p>OLD MAN FROM INDIA</p>
+								<p>by Frank Tucker</p>
+							</div>
+						</div>
+
 					</div>
-					<div class="photobox-block4">
-						<div class="photobox-item1">
-							<div class="addition">
-								<p>OLD MAN FROM INDIA</p>
-								<p><em>by Frank Tucker</em></p>
-							</div>
-						</div>
-						<div class="photobox-item2">
-							<div class="addition">
-								<p>OLD MAN FROM INDIA</p>
-								<p><em>by Frank Tucker</em></p>
-							</div>
-						</div>
-					</div>
+
 				</div>
 				<button class="pink-button">LOAD MORE</button>
 			</div>
 		</div>
 	</section>
 
-	<section class="about-photography" id="about-photography">
+	<section class="about-photography section" id="about-photography">
 		<h2>About Stock Photography</h2>
 		<div class="about-photography-main">
 			<div class="container">
@@ -259,7 +271,7 @@
 		</div>
 	</section>
 
-	<section class="testimonials" id="testimonials">
+	<section class="testimonials section" id="testimonials">
 		<div class="container">
 			<div class="testimonial-item">
 				<h3>Hear what our customers are saying</h3>
@@ -275,7 +287,7 @@
 				</div>
 			</div>
 			<div class="testimonials-slider">
-				<h3>Our sponsors</h3>
+				<h3 id="sponsors" class="section">Our sponsors</h3>
 				<div class="slider-container">
 					<div class="move-slider" data-direction="left"></div>
 					<div class="move-slider" data-direction="right"></div>
@@ -298,7 +310,7 @@
 		</div>
 	</section>
 
-	<section class="team-section" id="team-section">
+	<section class="team-section section" id="team-section">
 		<div class="container">
 			<h2>Meet our team</h2>
 			<div class="team-block">
@@ -342,7 +354,7 @@
 	<section class="location-map" id="map" onload="myMap">
 	</section>
 
-	<section class="feedback" id="feedback">
+	<section class="feedback section" id="feedback">
 		<h2>Get in touch with us</h2>
 		<div class="container">
 			<form action="">
@@ -359,7 +371,7 @@
 					<div class="our-address">
 						<div class="address">
 							<div class="title">Address:</div>
-							<div class="text">3497 Gateway Road Portland <br> QR 97217</div>
+							<div class="text">3497 Gateway Road Portland QR 97217</div>
 						</div>
 						<div class="phone">
 							<div class="title">Phone:</div>
@@ -382,18 +394,20 @@
 	<footer class="footer" id="footer">
 		<div class="footer-main">
 			<div class="footer-links">
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
+				<a target="_blank" href="http://twitter.com"></a>
+				<a target="_blank" href="http://facebook.com"></a>
+				<a target="_blank" href="http://pinterest.com"></a>
+				<a target="_blank" href="http://dribbble.com"></a>
 			</div>
 			<p>© 2015 Innosphere - All rights reserved - made by Vid Kraljić Radulović</p>
 		</div>
 	</footer>
 
+	<script src="script/header-top-mobile/menuClose.js"></script>
 	<script src="script/testimonials/slider.js"></script>
 	<script src="script/header-top-mobile/menuSwitch.js"></script>
     <script src="script/location-map/location-map.js"></script>
     <script src="script/smoothscroll.js"></script>
+    <script src="script/fixed-menu/fixedInView.js"></script>
 </body>
 </html>
