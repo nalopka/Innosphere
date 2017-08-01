@@ -6,19 +6,18 @@ p, h1, h2, h3, h4, span {
 	cursor: default;
 }
 html {
-	line-height: 1.4;
 	font-size: 16px;
 }
 
 
 
-
 @import "../UI/fonts/fonts";
 @import "../UI/color/color";
+@import "../UI/decor_elements/buttons";
 @import "mixins";
 @import "main-style";
 
-@import "fixed-menu/fixed-menu";
+
 @import "header/header";
 @import "search/search";
 @import "features/features";

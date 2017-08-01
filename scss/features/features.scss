@@ -1,12 +1,8 @@
 .features { 	
-	height: auto;
-	padding-bottom: 50px;
+	height: 100vh;
 	.features-header {
-		padding-top: 10%;
-		display: flex;
-		flex-flow: column;
-		justify-content: space-around;
-		h2 { padding-bottom: 5%;}
+		margin-top: 10%;
+		h2 { margin-bottom: 5%;}
 		p {
 			font-size: 1.125rem;
 			font-family: OpenSans-Light;
@@ -16,66 +12,73 @@
 	.features-photobox {
 		position: relative;
 		h2 {
-			padding-top: 5%;
+			margin-top: 5%;
 		}
 		.photobox {
 			display: flex;
 			justify-content: space-between;
-			padding-top: 5%;
+			margin-top: 5%;
 			height: 372px;
-
-			// FIRST
-			.photobox-block:first-of-type {
+			.photobox-block1 {
 				position: relative;
 				@include flexbox("", space-between, column);
 				width: 285px;
 				height: 100%;
-				.photobox-item {width: 100%; height: 49%; position: relative;}
-				.photobox-item:first-of-type {	background: $white url("../img/features/photobox/photobox-block1/image1.png") 0 0 no-repeat;}
-				.photobox-item:last-of-type { background: $white url("../img/features/photobox/photobox-block1/image2.png") 0 0 no-repeat;}
+				.photobox-item1 {
+					position: relative;
+					background: $white url("../img/features/photobox/photobox-block1/image1.png") 0 0 no-repeat;
+					width: 100%;
+					height: 48%;	
+				}
+				.photobox-item2 {
+					background: $white url("../img/features/photobox/photobox-block1/image2.png") 0 0 no-repeat;
+					width: 100%;
+					height: 48%;
+				}
 			}
-			// -----
-
-			// SECOND
-			.photobox-block:nth-of-type(2) {
+			.photobox-block2 {
 				width: 390px;
 				height: 100%;
-				.photobox-item {
+				.photobox-item1 {
 					height: 100%;
 					width: 100%;	
 					background: $white url("../img/features/photobox/photobox-block2/image1.png") left top no-repeat;
 				}
 			}
-			// ----
-
-			// THIRD
-			.photobox-block:nth-of-type(3) {
+			.photobox-block3 {
 				width: 105px;
 				height: 100%;
-				.photobox-item {
+				.photobox-item1 {
 					height: 100%;
 					width: 100%;
 					background: $white url("../img/features/photobox/photobox-block3/image1.png") 0 0 no-repeat;
 				}
 			}
-			// -----
-
-			// FOUR
-			.photobox-block:last-of-type {
+			.photobox-block4 {
 				display: flex;
 				justify-content: space-between;
 				flex-direction: column;
 				width: 185px;
 				height: 100%;
-				.photobox-item {width: 100%; height: 49%; position: relative;}
-				.photobox-item:first-of-type { background: $white url("../img/features/photobox/photobox-block4/image1.png") 0 0 no-repeat;}
-				.photobox-item:last-of-type { background: $white url("../img/features/photobox/photobox-block4/image2.png") 0 0 no-repeat;}
+				.photobox-item1 {
+					height: 49%;
+					width: 100%;
+					background: $white url("../img/features/photobox/photobox-block4/image1.png") 0 0 no-repeat;
+				}
+				.photobox-item2 {
+					height: 49%;
+					width: 100%;
+					background: $white url("../img/features/photobox/photobox-block4/image2.png") 0 0 no-repeat;
+				}
 			}
-			// -----
-
-			.photobox-item {
+			.photobox-item1,
+			.photobox-item2 {
 				position: relative;
-				&:hover { .addition { opacity: 1;} }
+				&:hover {
+						.addition {
+							opacity: 1;
+						}
+					}
 			}
 		}
 		button {
@@ -100,7 +103,6 @@
 	opacity: 0;
 	transition: 0.5s ease;
 		p { 
-			font-style: italic;
 			font-size: 0.85rem;
 			padding-left: 10%; }
 		p:first-of-type {

@@ -1,13 +1,10 @@
 @include mq("tablet-wide", max) {
 		.feedback {
 			height: 100%;
-			h2 {padding-bottom: 25px;}
 			.container {
 				flex-flow: column wrap; 
 				width: 100%;
-
 				form {
-					padding-bottom: 50px;
 					flex-flow: row wrap; 
 					width: 100%; 
 					align-items: center;
@@ -16,21 +13,22 @@
 						@media screen and (min-width: 560px) and (max-width: 1023px) { width: 90%;}
 					}
 					button {
-						bottom: -40px; 
+						bottom: -80px; 
 						margin-bottom: 20px; 
 						left: 8%;
 					}
 				}
 				.feedback-contacts {
-					padding-top: 70px; 
-					padding-bottom: 50px; 
+					margin-top: 70px; 
+					margin-bottom: 30px; 
 					width: auto;
-					h3 {margin-left: 25%;}
-					.contacts-about p {text-align: center;}
 				}
 			}
 		}
 	}
+
+
+
 
 @media screen and (min-height:800px) {
 	.feedback {
