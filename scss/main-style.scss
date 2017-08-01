@@ -10,13 +10,14 @@
 	font-family: OpenSans-ExtraBold;
 	cursor: pointer;
 	&:after {
-				position: absolute;
-				content: "";
-				width: 100%;
-				border-bottom: 3px solid #db577e;
-				bottom: 0;
-				left: 0;
-			}
+		position: absolute;
+		content: "";
+		width: 100%;
+		border-bottom: 3px solid #db577e;
+		bottom: 0;
+		left: 0;
+	}
+	&:hover { background-color: #db577e; }
 }
 
 
