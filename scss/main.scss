@@ -8,13 +8,14 @@ p, h1, h2, h3, h4, span {
 html {
 	line-height: 1.4;
 	font-size: 16px;
+	font-family: OpenSans, sans-serif;
 }
 
 
 
 
-@import "../UI/fonts/fonts";
-@import "../UI/color/color";
+@import "UI/fonts";
+@import "UI/color";
 @import "mixins";
 @import "main-style";
 

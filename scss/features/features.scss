@@ -100,11 +100,13 @@
 	opacity: 0;
 	transition: 0.5s ease;
 		p { 
+
 			font-style: italic;
 			font-size: 0.85rem;
 			padding-left: 10%; }
 		p:first-of-type {
-			font-family: OpenSans-Light;
+			font-family: OpenSans-Regular;
+			font-style: normal;
 		}
 }
 

@@ -24,7 +24,7 @@
 			h3 {
 				padding-top: 10px;
 				font-size: 1.875rem;
-				font-family: OpenSans-Semibold, sans-serif;
+				font-weight: 500;
 				text-align: left;
 				line-height: 26px;
 			}
@@ -42,11 +42,11 @@
 				line-height: 25px;
 				font-family: OpenSans-Light, sans-serif;
 			}
-			&:first-of-type {background:transparent url('../img/team-section/team-block-item/image1.png') left top no-repeat;}
+			&:first-of-type {background: transparent url('../img/team-section/team-block-item/image1.png') left top no-repeat;}
 
-			&:nth-of-type(2) {background:transparent url('../img/team-section/team-block-item/image2.png') left top no-repeat;}
+			&:nth-of-type(2) {background: transparent url('../img/team-section/team-block-item/image2.png') left top no-repeat;}
 			
-			&:last-of-type { background:transparent url('../img/team-section/team-block-item/image3.png') left top no-repeat;}
+			&:last-of-type { background: transparent url('../img/team-section/team-block-item/image3.png') left top no-repeat;}
 		
 		.team-block-social {
 			position: absolute;
