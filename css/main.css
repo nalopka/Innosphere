@@ -83,39 +83,33 @@ h2 {
   width: 50px;
   height: 300px; }
   .fixed-menu a:first-of-type {
-    background: #232020 url("../img/fixed-menu/header.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/header.png"); }
   .fixed-menu a:nth-of-type(2) {
-    background: #232020 url("../img/fixed-menu/search.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/search.png"); }
   .fixed-menu a:nth-of-type(3) {
-    background: #232020 url("../img/fixed-menu/image.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/image.png"); }
   .fixed-menu a:nth-of-type(4) {
-    background: #232020 url("../img/fixed-menu/about.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/about.png"); }
   .fixed-menu a:nth-of-type(5) {
-    background: #232020 url("../img/fixed-menu/testimonials.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/testimonials.png"); }
   .fixed-menu a:nth-of-type(6) {
-    background: #232020 url("../img/fixed-menu/sponsors.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/sponsors.png"); }
   .fixed-menu a:nth-of-type(7) {
-    background: #232020 url("../img/fixed-menu/team.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/team.png"); }
   .fixed-menu a:last-of-type {
-    background: #232020 url("../img/fixed-menu/image.png") center no-repeat;
-    background-size: 30%; }
+    background-image: url("../img/fixed-menu/image.png"); }
   .fixed-menu a {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
     display: block;
     height: 12.5%;
     width: 100%;
     background-color: #232020; }
     .fixed-menu a:hover {
       background-color: #db577e; }
-
-.active-fixed {
-  background-color: #db577e !important; }
+  .fixed-menu .active-fixed {
+    background-color: #db577e; }
 
 @media screen and (max-width: 849px) {
   .fixed-menu {
@@ -506,67 +500,6 @@ h2 {
     width: 20%;
     background: url("../img/header-top-mobile/search-white2.png") center no-repeat;
     background-size: 20px 20px; }
-  .header .header-about {
-    width: 33%;
-    background: url("../img/header-top-mobile/icon-contact2.svg") center no-repeat;
-    background-size: 30px 30px; }
-  .header .contacts {
-    position: absolute;
-    top: 15%;
-    width: 100%;
-    height: 350px;
-    background-color: #333333;
-    left: 0;
-    z-index: 2;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    display: none; }
-    .header .contacts .contacts-item {
-      width: 70%;
-      padding-bottom: 10px;
-      text-align: center;
-      color: white;
-      font-family: Opensans-regular, sans-serif; }
-      .header .contacts .contacts-item h4 {
-        font-size: 1.2rem;
-        padding-bottom: 10px; }
-      .header .contacts .contacts-item p {
-        font-family: Opensans-light, sans-serif; }
-      .header .contacts .contacts-item a {
-        display: inline-block;
-        width: 30%;
-        height: 40px;
-        color: #ffffff;
-        text-decoration: none;
-        width: 100%; }
-      .header .contacts .contacts-item:last-of-type {
-        max-width: 50%;
-        margin-top: 10px; }
-        .header .contacts .contacts-item:last-of-type a {
-          width: 30%; }
-      .header .contacts .contacts-item .social-fb {
-        background: url("../img/header/header-navigation/header-navitagion-social/Facebook.png") 50% 50% no-repeat;
-        background-size: 80%; }
-      .header .contacts .contacts-item .social-in {
-        background: url("../img/header/header-navigation/header-navitagion-social/linkedin.png") 50% 65% no-repeat;
-        background-size: 100%; }
-      .header .contacts .contacts-item .social-be {
-        background: url("../img/header/header-navigation/header-navitagion-social/behance.png") 50% 65% no-repeat;
-        background-size: 100%; }
   .header .active {
     display: -webkit-box;
     display: -webkit-flex;

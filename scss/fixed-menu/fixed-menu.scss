@@ -7,26 +7,29 @@
 	top: 30%;
 	width: 50px;
 	height: 300px;
-	a:first-of-type {background: $light-black url("../img/fixed-menu/header.png") center no-repeat; background-size: 30%;}
-	a:nth-of-type(2) {background: $light-black url("../img/fixed-menu/search.png") center no-repeat; background-size: 30%;}
-	a:nth-of-type(3) {background: $light-black url("../img/fixed-menu/image.png") center no-repeat; background-size: 30%;}
-	a:nth-of-type(4) {background: $light-black url("../img/fixed-menu/about.png") center no-repeat; background-size: 30%;}
-	a:nth-of-type(5) {background: $light-black url("../img/fixed-menu/testimonials.png") center no-repeat; background-size: 30%;}
-	a:nth-of-type(6) {background: $light-black url("../img/fixed-menu/sponsors.png") center no-repeat; background-size: 30%;}
-	a:nth-of-type(7) {background: $light-black url("../img/fixed-menu/team.png") center no-repeat; background-size: 30%;}
-	a:last-of-type {background: $light-black url("../img/fixed-menu/image.png") center no-repeat; background-size: 30%;}
+	a:first-of-type {background-image: url("../img/fixed-menu/header.png");}
+	a:nth-of-type(2) {background-image: url("../img/fixed-menu/search.png");}
+	a:nth-of-type(3) {background-image: url("../img/fixed-menu/image.png");}
+	a:nth-of-type(4) {background-image: url("../img/fixed-menu/about.png");}
+	a:nth-of-type(5) {background-image: url("../img/fixed-menu/testimonials.png");}
+	a:nth-of-type(6) {background-image: url("../img/fixed-menu/sponsors.png");}
+	a:nth-of-type(7) {background-image: url("../img/fixed-menu/team.png");}
+	a:last-of-type {background-image: url("../img/fixed-menu/image.png");}
 	a {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30%;
 		display: block;
 		height: 12.5%;
 		width: 100%;
 		background-color: $light-black;
 		&:hover {background-color: #db577e;}
 	}
-	
-}
-.active-fixed {
-		background-color: #db577e !important;
+	.active-fixed {
+		background-color: #db577e;
 	}
+}
+
 @include mq("850", max) {
 	.fixed-menu {display: none;}
 	};
