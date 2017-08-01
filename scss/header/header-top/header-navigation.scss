@@ -18,7 +18,7 @@
 						display: flex;
 						align-items: center;
 						justify-content: space-around;
-						font-family: OpenSans-Regular;
+						font-family: OpenSans-Regular, sans-serif;
 						text-decoration: none;
 						font-weight: 600;
 						color: $white;
@@ -28,7 +28,6 @@
 							&:before {
 								@extend .active-link:before;
 							}
-							// border-bottom: 3px solid $pink;
 						}
 					}
 				}

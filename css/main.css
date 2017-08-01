@@ -51,7 +51,7 @@ html {
   background-color: #f17398;
   border: none;
   color: #ffffff;
-  font-family: OpenSans-ExtraBold;
+  font-family: OpenSans-ExtraBold, sans-serif;
   cursor: pointer; }
   .pink-button:after {
     position: absolute;
@@ -68,7 +68,7 @@ html {
 
 h2 {
   text-align: center;
-  font-family: OpenSans-Light;
+  font-family: OpenSans-Light, sans-serif;
   font-weight: normal;
   font-size: 1.875rem; }
 
@@ -164,7 +164,7 @@ h2 {
         .header .header-top .header-contacts .header-contacts-item a {
           text-decoration: none; }
         .header .header-top .header-contacts .header-contacts-item h4 {
-          font-family: OpenSans-Light;
+          font-family: OpenSans-Light, sans-serif;
           font-weight: normal;
           position: relative;
           padding-left: 15px;
@@ -187,7 +187,7 @@ h2 {
           background: url("../img/header/header-contacts-item/icon3.png") 0 0 no-repeat; }
         .header .header-top .header-contacts .header-contacts-item p, .header .header-top .header-contacts .header-contacts-item a {
           font-weight: bold;
-          font-family: OpenSans-Regular;
+          font-family: OpenSans-Regular, sans-serif;
           color: #333333;
           font-size: 0.81rem; }
     .header .header-top .header-navigation {
@@ -227,7 +227,7 @@ h2 {
             -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
             justify-content: space-around;
-            font-family: OpenSans-Regular;
+            font-family: OpenSans-Regular, sans-serif;
             text-decoration: none;
             font-weight: 600;
             color: #ffffff;
@@ -479,7 +479,7 @@ h2 {
         display: inline-block;
         color: #ffffff;
         text-decoration: none;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         width: 100%;
         height: 45px;
         display: -webkit-box;
@@ -540,12 +540,12 @@ h2 {
       padding-bottom: 10px;
       text-align: center;
       color: white;
-      font-family: Opensans-regular; }
+      font-family: Opensans-regular, sans-serif; }
       .header .contacts .contacts-item h4 {
         font-size: 1.2rem;
         padding-bottom: 10px; }
       .header .contacts .contacts-item p {
-        font-family: Opensans-light; }
+        font-family: Opensans-light, sans-serif; }
       .header .contacts .contacts-item a {
         display: inline-block;
         width: 30%;
@@ -612,7 +612,7 @@ h2 {
     .search form label {
       display: block; }
     .search form label, .search form p {
-      font-family: OpenSans-Semibold;
+      font-family: OpenSans-Semibold, sans-serif;
       font-size: 0.81rem; }
     .search form .form-item {
       width: 100%;
@@ -638,7 +638,7 @@ h2 {
           height: 28px;
           border-color: #b3b3b3;
           padding-left: 13px;
-          font-family: OpenSans-Regular;
+          font-family: OpenSans-Regular, sans-serif;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none; }
@@ -721,7 +721,7 @@ h2 {
       padding-bottom: 5%; }
     .features .features-header p {
       font-size: 1.125rem;
-      font-family: OpenSans-Light;
+      font-family: OpenSans-Light, sans-serif;
       text-align: center; }
   .features .features-photobox {
     position: relative; }
@@ -938,7 +938,7 @@ h2 {
       -ms-flex-pack: center;
       justify-content: center; }
       .about-photography .about-photography-main .container h3 {
-        font-family: OpenSans-ExtraBold;
+        font-family: OpenSans-ExtraBold, sans-serif;
         font-size: 3.125rem;
         color: #ffffff;
         margin-bottom: 5%; }
@@ -946,7 +946,7 @@ h2 {
         width: 100%;
         color: #d5d4d4;
         font-size: 1.125rem;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         line-height: 35px;
         text-align: center; }
       .about-photography .about-photography-main .container button {
@@ -958,8 +958,10 @@ h2 {
 
 @media screen and (max-width: 1023px) {
   .about-photography {
+    padding: 30px 0;
     height: auto; }
     .about-photography h2 {
+      padding-bottom: 30px; }
     .about-photography .about-photography-main .container {
       width: 100%;
       font-size: 0.8rem; }
@@ -978,7 +980,7 @@ h2 {
   .testimonials-slider h3 {
     margin-bottom: 5%;
     font-size: 1.875rem;
-    font-family: OpenSans-Light;
+    font-family: OpenSans-Light, sans-serif;
     text-align: center;
     font-weight: normal;
     margin-bottom: 0; }
@@ -1055,7 +1057,7 @@ h2 {
   .testimonials .testimonial-item h3 {
     margin-bottom: 5%;
     font-size: 1.875rem;
-    font-family: OpenSans-Light;
+    font-family: OpenSans-Light, sans-serif;
     text-align: center;
     font-weight: normal; }
   .testimonials .testimonial-item .testimonials-review {
@@ -1081,7 +1083,7 @@ h2 {
         line-height: 30px;
         font-size: 0.7rem;
         height: 100px;
-        font-family: OpenSans-Bold;
+        font-family: OpenSans-Bold, sans-serif;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1093,7 +1095,7 @@ h2 {
         background-size: 15%; }
       .testimonials .testimonial-item .testimonials-review .testimonials-review-item p {
         font-size: 1.125rem;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         color: #999999;
         margin-left: 18%;
         margin-top: 5%; }
@@ -1189,12 +1191,12 @@ h2 {
       .team-section .team-block .team-block-item h3 {
         padding-top: 10px;
         font-size: 1.875rem;
-        font-family: OpenSans-Semibold;
+        font-family: OpenSans-Semibold, sans-serif;
         text-align: left;
         line-height: 26px; }
       .team-section .team-block .team-block-item h4 {
         font-size: 1.125rem;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         font-style: italic;
         font-weight: normal;
         color: #666666;
@@ -1203,7 +1205,7 @@ h2 {
         color: #333333;
         font-size: 0.93rem;
         line-height: 25px;
-        font-family: OpenSans-Light; }
+        font-family: OpenSans-Light, sans-serif; }
       .team-section .team-block .team-block-item:first-of-type {
         background: transparent url("../img/team-section/team-block-item/image1.png") left top no-repeat; }
       .team-section .team-block .team-block-item:nth-of-type(2) {
@@ -1304,7 +1306,7 @@ h2 {
         padding-left: 15px;
         margin-bottom: 15px;
         font-size: 1.125rem;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         width: 302px;
         height: 39px;
         border: none; }
@@ -1312,7 +1314,7 @@ h2 {
         padding-top: 10px;
         padding-left: 15px;
         font-size: 1.125rem;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         background-color: #fbfbfb;
         resize: none;
         width: 100%;
@@ -1352,12 +1354,12 @@ h2 {
         width: 30%;
         font-size: 1.125rem;
         color: black;
-        font-family: OpenSans-Bold;
+        font-family: OpenSans-Bold, sans-serif;
         line-height: 24px; }
       .feedback .container .feedback-contacts .our-address .text {
         width: 70%;
         font-size: 1.125rem;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         color: #999999;
         line-height: 25px; }
       .feedback .container .feedback-contacts .contacts-address h3 {
@@ -1367,7 +1369,7 @@ h2 {
         background: transparent url("../img/feedback/feedback-contacts/IconAbout.png") left 5px no-repeat; }
       .feedback .container .feedback-contacts p {
         font-size: 1.125rem;
-        font-family: OpenSans-Light;
+        font-family: OpenSans-Light, sans-serif;
         color: #999999;
         line-height: 25px; }
 
@@ -1472,7 +1474,7 @@ h2 {
     .footer .footer-main p {
       font-size: 0.95rem;
       color: #999999;
-      font-family: OpenSans-Light; }
+      font-family: OpenSans-Light, sans-serif; }
 
 @media screen and (max-width: 849px) {
   .footer p {

@@ -20,7 +20,7 @@
 				padding-left: 15px; 
 				margin-bottom: 15px;
 				font-size: 1.125rem;
-				font-family: OpenSans-Light;
+				font-family: OpenSans-Light, sans-serif;
 				width: 302px;
 				height: 39px;
 				border: none;
@@ -29,7 +29,7 @@
 				padding-top: 10px;
 				padding-left: 15px; 
 				font-size: 1.125rem;
-				font-family: OpenSans-Light;
+				font-family: OpenSans-Light, sans-serif;
 				background-color: rgba(251, 251, 251, 1);
 				resize: none;
 				width: 100%;
@@ -63,13 +63,13 @@
 						width: 30%;
 						font-size: 1.125rem;
 						color: black;
-						font-family: OpenSans-Bold;
+						font-family: OpenSans-Bold, sans-serif;
 						line-height: 24px;
 						}
 					.text {
 						width: 70%;
 						font-size: 1.125rem;
-						font-family: OpenSans-Light;
+						font-family: OpenSans-Light, sans-serif;
 						color: $grey;
 						line-height: 25px;
 					}
@@ -79,7 +79,7 @@
 			
 			p {
 				font-size: 1.125rem;
-				font-family: OpenSans-Light;
+				font-family: OpenSans-Light, sans-serif;
 				color: $grey;
 				line-height: 25px;
 			}

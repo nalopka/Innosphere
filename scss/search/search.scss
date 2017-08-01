@@ -10,7 +10,7 @@
 		justify-content: space-between;
 		label {display: block;}
 		label, p {
-			font-family: OpenSans-Semibold;
+			font-family: OpenSans-Semibold, sans-serif;
 			font-size: 0.81rem;
 		}
 		.form-item {
@@ -29,7 +29,7 @@
 					height: 28px;
 					border-color: #b3b3b3;
 					padding-left: 13px;
-					font-family: OpenSans-Regular;
+					font-family: OpenSans-Regular, sans-serif;
 					-webkit-appearance: none;
 					appearance: none;
 					}

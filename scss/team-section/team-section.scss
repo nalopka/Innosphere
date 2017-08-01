@@ -24,13 +24,13 @@
 			h3 {
 				padding-top: 10px;
 				font-size: 1.875rem;
-				font-family: OpenSans-Semibold;
+				font-family: OpenSans-Semibold, sans-serif;
 				text-align: left;
 				line-height: 26px;
 			}
 			h4 {
 				font-size: 1.125rem;
-				font-family: OpenSans-Light;
+				font-family: OpenSans-Light, sans-serif;
 				font-style: italic;
 				font-weight: normal;
 				color: $contacts_grey;
@@ -40,7 +40,7 @@
 				color: $p_lightblack;
 				font-size: 0.93rem;
 				line-height: 25px;
-				font-family: OpenSans-Light;
+				font-family: OpenSans-Light, sans-serif;
 			}
 			&:first-of-type {background:transparent url('../img/team-section/team-block-item/image1.png') left top no-repeat;}
 

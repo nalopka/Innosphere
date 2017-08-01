@@ -7,7 +7,7 @@
 	background-color: $pink;
 	border: none;
 	color: $white;
-	font-family: OpenSans-ExtraBold;
+	font-family: OpenSans-ExtraBold, sans-serif;
 	cursor: pointer;
 	&:after {
 		position: absolute;
@@ -26,7 +26,7 @@
 }
 h2 {
 	text-align: center;
-	font-family: OpenSans-Light;
+	font-family: OpenSans-Light, sans-serif;
 	font-weight: normal;
 	font-size: 1.875rem;
 }
