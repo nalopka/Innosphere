@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjlxXUJqoZBod7l-7Mym8sqUz-DvCXeCE&amp;callback=myMap" async="" defer=""></script>
+  <script src="script/in-view.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no">
+  <title>Innosphere</title>
+  <body>
+    <nav class="fixed-menu"><a href="#header"></a><a href="#search"></a><a href="#features"></a><a href="#about-photography"></a><a href="#testimonials"></a><a href="#team-section"></a><a href="#feedback"></a></nav>
+    <header id="header" class="header">
+      <div class="header-top-mobile"><a href="#search" class="search-menu"></a>
+        <div data-link="link-menu" class="menu link">
+          <div class="menu-container"></div>
+          <div id="dropMenu" data-link-dest="link-menu" class="mobile-menu">
+            <ul class="upper-text">
+              <li><a href="#header" class="active-link">Homepage</a></li>
+              <li><a href="#search">Search</a></li>
+              <li><a href="#features">Recent images</a></li>
+              <li><a href="#about-photography">About</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
+              <li><a href="#team-section">Team</a></li>
+              <li><a href="#feedback">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-top">
+          <div class="header-contacts">
+            <div class="header-contacts-item">
+              <h4 class="contact_office">Visit our office</h4>
+              <p>2945 Rinehart Road, Sunrise</p>
+            </div>
+            <div class="header-contacts-item">
+              <h4 class="contact_phone">Contact us via phone</h4><a href="tel:+44 20 7946 0041 3685">+44 20 7496 0041 3685</a>
+            </div>
+            <div class="header-contacts-item">
+              <h4 class="contact_email">Ask us questions</h4><a href="mailto:info@innosphere.com">info@innosphere.com</a>
+            </div>
+          </div>
+          <nav class="header-navigation">
+            <div class="nav-menu">
+              <ul class="upper-text">
+                <li><a href="#header" class="active-link">Homepage</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#features">Recent images</a></li>
+                <li><a href="#about-photography">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#team-section">Team</a></li>
+                <li><a href="#feedback">Contact</a></li>
+              </ul>
+            </div>
+            <div class="nav-social">
+              <ul>
+                <li><a target="_blank" href="http://facebook.com" class="social-fb"></a></li>
+                <li><a target="_blank" href="http://ru.linkedin.com" class="social-in"></a></li>
+                <li><a target="_blank" href="http://behance.net" class="social-be"></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="header-main">
+          <div class="header-main-text">
+            <h2>Your beautiful handcrafted stock photography marketplace.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nulla facere, fugit ab quod id pariatur</p>
+          </div>
+          <button class="pink-button">KNOW MORE</button>
+        </div>
+        <div id="search-button" class="header-search"><a href="#search-button">SEARCH ALL GALLERIES</a></div>
+      </div>
+    </header>
+    <section id="search" class="search section">
+      <div class="container">
+        <form action="">
+          <div class="form-item">
+            <div class="search-item">
+              <label for="categories">Categories</label>
+              <select id="categories">
+                <option value="categories-item1" selected="">Architecture</option>
+                <option value="categories-item2">Mobile</option>
+                <option value="categories-item3">Sport</option>
+              </select>
+            </div>
+            <div class="search-item">
+              <label for="license">License type</label>
+              <select id="license">
+                <option value="license-item1">Creative</option>
+                <option value="license-item2">Another creative</option>
+              </select>
+            </div>
+            <div class="search-item">
+              <label for="image-size">Image Size</label>
+              <select id="image-size">
+                <option value="image-size-item1">XXXL</option>
+                <option value="image-size-item2">XXL</option>
+              </select>
+            </div>
+            <div class="search-item">
+              <label for="search-color">Color</label>
+              <select id="search-color">
+                <option value="search-color-1">HEX    #F6546A</option>
+                <option value="search-color-2">HEX    #335786</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="search-item">
+              <label for="browse">Browse</label>
+              <select id="browse">
+                <option value="browse-item1">Most Viewed</option>
+                <option value="browse-item2">Rating</option>
+              </select>
+            </div>
+            <div class="search-item">
+              <label for="search-location">Location</label>
+              <select id="search-location">
+                <option value="location-item1">Worldwide</option>
+                <option value="location-item2">Local</option>
+              </select>
+            </div>
+            <div class="search-item">
+              <p>Adult Content</p>
+              <input id="adult-content-left" type="radio" name="adult-content-item" checked="">
+              <label for="adult-content-left" onclick="" class="adult-content-item">YES</label>
+              <input id="adult-content-right" type="radio" name="adult-content-item">
+              <label for="adult-content-right" onclick="" class="adult-content-item">NO</label>
+            </div>
+            <div class="search-item">
+              <button type="submit" class="pink-button">START YOUR SEARCH</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="features" class="features section">
+      <div class="container">
+        <div class="features-header">
+          <h2>Over 40 Million Stock Photos, Vectors, Videos, and Music Tracks</h2>
+          <p>Search for images anywhere using our award-winning iPad®, iPhone®, and Android®, apps. Funtional enough to use alone, beautiful enough to show off to clients.</p>
+        </div>
+        <div class="features-photobox">
+          <h2>Recently uploaded</h2>
+          <div class="photobox">
+            <div class="photobox-block">
+              <div class="photobox-item">
+                <div class="addition">
+                  <p>OLD MAN FROM INDIA</p>
+                  <p>by Frank Tucker</p>
+                </div>
+              </div>
+              <div class="photobox-item">
+                <div class="addition">
+                  <p>OLD MAN FROM INDIA</p>
+                  <p>by Frank Tucker</p>
+                </div>
+              </div>
+            </div>
+            <div class="photobox-block">
+              <div class="photobox-item">
+                <div class="addition">
+                  <p>OLD MAN FROM INDIA</p>
+                  <p>by Frank Tucker</p>
+                </div>
+              </div>
+            </div>
+            <div class="photobox-block">
+              <div class="photobox-item">
+                <div class="addition">
+                  <p>OLD MAN FROM INDIA</p>
+                  <p>by Frank Tucker</p>
+                </div>
+              </div>
+            </div>
+            <div class="photobox-block">
+              <div class="photobox-item">
+                <div class="addition">
+                  <p>OLD MAN FROM INDIA</p>
+                  <p>by Frank Tucker</p>
+                </div>
+              </div>
+              <div class="photobox-item">
+                <div class="addition">
+                  <p>OLD MAN FROM INDIA</p>
+                  <p>by Frank Tucker</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="pink-button">LOAD MORE</button>
+        </div>
+      </div>
+    </section>
+    <section id="about-photography" class="about-photography section">
+      <h2>About Stock Photography</h2>
+      <div class="about-photography-main">
+        <div class="container">
+          <h3 class="upper-text">What is stock photography</h3>
+          <p>Supply of photographs, which are ofter licensed for specific uses. It is used to fulfill the needs of creative assignments instead of hiring a photographer, often for a lower cost. Today, stock images can be presented in searchable online databases. They cana be purchasedand delivered online.</p>
+          <button class="pink-button">KNOW MORE</button>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <div class="testimonial-item">
+          <h2>Hear what our customers are saying</h2>
+          <div class="testimonials-review">
+            <div class="testimonials-review-item">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, facilis. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."</p><span>JENNIFER R. RHOADES, CEO, BUBBLESPHERE</span>
+            </div>
+            <div class="testimonials-review-item">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, deserunt. Lorem ipsum dolor sit amet."</p><span>MATTHEW J. SEARS, FOUNDER OF FEEDCLUB</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-slider">
+          <h2 id="sponsors" class="section">Our sponsors</h2>
+          <div class="slider-container">
+            <div data-direction="left" class="move-slider"></div>
+            <div data-direction="right" class="move-slider"></div>
+            <div class="slider">
+              <div class="slider-small">
+                <div class="sponsors-logo sponsors-Ansible"></div>
+                <div class="sponsors-logo sponsors-Booking"></div>
+                <div class="sponsors-logo sponsors-Cranford"></div>
+                <div class="sponsors-logo sponsors-Dribbble"></div>
+                <div class="sponsors-logo sponsors-Gizmodo"></div>
+                <div class="sponsors-logo sponsors-ibex"></div>
+                <div class="sponsors-logo sponsors-LinkedIn"></div>
+                <div class="sponsors-logo sponsors-Mixpanel"></div>
+                <div class="sponsors-logo sponsors-Pinterest"></div>
+                <div class="sponsors-logo sponsors-Textbit"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team-section" class="team-section section">
+      <div class="container">
+        <h2>Meet our team</h2>
+        <div class="team-block">
+          <div class="team-block-item">
+            <h3>Patricia Wright</h3>
+            <h4>Lead Developer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, eius.</p>
+            <div class="team-block-social"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+          </div>
+          <div class="team-block-item">
+            <h3>James C. Cotter</h3>
+            <h4>CEO</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat praesentium, dolor debitis quia eaque? Officia.</p>
+            <div class="team-block-social"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+          </div>
+          <div class="team-block-item">
+            <h3>Sarah Cole</h3>
+            <h4>Web Designer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti animi soluta, dignissimos cupiditate! Nam, aut.</p>
+            <div class="team-block-social"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="map" onload="myMap" class="location-map"></section>
+    <section id="feedback" class="feedback section">
+      <h2>Get in touch with us</h2>
+      <div class="container">
+        <form action="">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+          <input type="email" placeholder="E-mail">
+          <input type="tel" placeholder="Phone Number">
+          <textarea id="feedback-message" name="feedback-message" placeholder="Message"></textarea>
+          <button class="pink-button">SEND MESSAGE</button>
+        </form>
+        <div class="feedback-contacts">
+          <div class="contacts-address">
+            <h3>Our Address</h3>
+            <div class="our-address">
+              <div class="address">
+                <div class="title">Address:</div>
+                <div class="text">3497 Gateway Road Portland QR 97217</div>
+              </div>
+              <div class="phone">
+                <div class="title">Phone:</div>
+                <div class="text">(229) 503-123-5434</div>
+              </div>
+              <div class="email">
+                <div class="title">Email:</div>
+                <div class="text">www.mobilecom.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-about">
+            <h3>About us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, velit?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="footer-main">
+        <div class="footer-links"><a target="_blank" href="http://twitter.com"></a><a target="_blank" href="http://facebook.com"></a><a target="_blank" href="http://pinterest.com"></a><a target="_blank" href="http://dribbble.com"></a></div>
+        <p>© 2015 Innosphere - All rights reserved - made by Vid Kraljić Radulović</p>
+      </div>
+    </footer>
+    <script src="script/header-top-mobile/menuClose.js"></script>
+    <script src="script/testimonials/slider.js"></script>
+    <script src="script/header-top-mobile/menuSwitch.js"></script>
+    <script src="script/location-map/location-map.js"></script>
+    <script src="script/smoothscroll.js"></script>
+    <script src="script/fixed-menu/fixedInView.js"></script>
+  </body>
+</head>
