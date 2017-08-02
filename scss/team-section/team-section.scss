@@ -24,15 +24,13 @@
 			h3 {
 				padding-top: 10px;
 				font-size: 1.875rem;
-				font-weight: 500;
 				text-align: left;
 				line-height: 26px;
 			}
 			h4 {
 				font-size: 1.125rem;
-				font-family: OpenSans-Light, sans-serif;
 				font-style: italic;
-				font-weight: normal;
+				font-weight: 300;
 				color: $contacts_grey;
 				padding: 8px 0 10px 0;
 			}
@@ -40,12 +38,9 @@
 				color: $p_lightblack;
 				font-size: 0.93rem;
 				line-height: 25px;
-				font-family: OpenSans-Light, sans-serif;
 			}
 			&:first-of-type {background: transparent url('../img/team-section/team-block-item/image1.png') left top no-repeat;}
-
 			&:nth-of-type(2) {background: transparent url('../img/team-section/team-block-item/image2.png') left top no-repeat;}
-			
 			&:last-of-type { background: transparent url('../img/team-section/team-block-item/image3.png') left top no-repeat;}
 		
 		.team-block-social {

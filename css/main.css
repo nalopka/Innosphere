@@ -9,31 +9,33 @@ p, h1, h2, h3, h4, span {
 html {
   line-height: 1.4;
   font-size: 16px;
-  font-family: OpenSans, sans-serif; }
+  font-family: Open Sans, sans-serif;
+  font-weight: 300; }
 
 @font-face {
-  font-family: OpenSans;
-  src: url(../fonts/Open_Sans/OpenSans-Light.ttf); }
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+  font-weight: 300; }
 
 @font-face {
-  font-family: OpenSans-Regular;
-  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf); }
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: 400; }
 
 @font-face {
-  font-family: OpenSans-Semibold;
-  src: url(../fonts/Open_Sans/OpenSans-Semibold.ttf); }
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-Semibold.ttf);
+  font-weight: 600; }
 
 @font-face {
-  font-family: OpenSans-Light;
-  src: url(../fonts/Open_Sans/OpenSans-Light.ttf); }
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-weight: 700; }
 
 @font-face {
-  font-family: OpenSans-Bold;
-  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf); }
-
-@font-face {
-  font-family: OpenSans-ExtraBold;
-  src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf); }
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf);
+  font-weight: 900; }
 
 .container {
   width: 990px;
@@ -44,9 +46,9 @@ html {
   background-color: #f17398;
   border: none;
   color: #ffffff;
-  font-family: OpenSans, sans-serif;
-  font-weight: 900;
-  cursor: pointer; }
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.75rem; }
   .pink-button:after {
     position: absolute;
     content: "";
@@ -62,8 +64,7 @@ html {
 
 h2 {
   text-align: center;
-  font-family: OpenSans;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.875rem; }
 
 .fixed-menu {
@@ -153,7 +154,6 @@ h2 {
         .header .header-top .header-contacts .header-contacts-item a {
           text-decoration: none; }
         .header .header-top .header-contacts .header-contacts-item h4 {
-          font-family: OpenSans-Light;
           font-weight: 300;
           position: relative;
           padding-left: 15px;
@@ -175,7 +175,7 @@ h2 {
         .header .header-top .header-contacts .header-contacts-item .contact_email:before {
           background: url("../img/header/header-contacts-item/icon3.png") 0 0 no-repeat; }
         .header .header-top .header-contacts .header-contacts-item p, .header .header-top .header-contacts .header-contacts-item a {
-          font-weight: 600;
+          font-weight: 400;
           color: #333333;
           font-size: 0.81rem; }
     .header .header-top .header-navigation {
@@ -298,7 +298,7 @@ h2 {
         width: 85%;
         margin: 0 auto; }
       .header .header-main .header-main-text h2 {
-        font-family: OpenSans-Semibold;
+        font-weight: 600;
         font-size: 1.375rem;
         line-height: 32px;
         color: #333333;
@@ -541,7 +541,7 @@ h2 {
     .search form label {
       display: block; }
     .search form label, .search form p {
-      font-family: OpenSans-Semibold;
+      font-weight: 600;
       font-size: 0.81rem; }
     .search form .form-item {
       width: 100%;
@@ -651,7 +651,6 @@ h2 {
       padding-bottom: 5%; }
     .features .features-header p {
       font-size: 1.125rem;
-      font-family: OpenSans-Light, sans-serif;
       text-align: center; }
   .features .features-photobox {
     position: relative; }
@@ -771,12 +770,11 @@ h2 {
   -o-transition: 0.5s ease;
   transition: 0.5s ease; }
   .addition p {
-    font-style: italic;
     font-size: 0.85rem;
     padding-left: 10%; }
-  .addition p:first-of-type {
-    font-family: OpenSans-Regular;
-    font-style: normal; }
+  .addition p:last-of-type {
+    font-style: italic;
+    font-weight: 300; }
 
 @media screen and (min-height: 800px) {
   .features {
@@ -869,7 +867,7 @@ h2 {
       -ms-flex-pack: center;
       justify-content: center; }
       .about-photography .about-photography-main .container h3 {
-        font-family: OpenSans-ExtraBold, sans-serif;
+        font-weight: 900;
         font-size: 3.125rem;
         color: #ffffff;
         margin-bottom: 5%; }
@@ -1012,7 +1010,7 @@ h2 {
         line-height: 30px;
         font-size: 0.7rem;
         height: 100px;
-        font-family: OpenSans-Semibold;
+        font-weight: 600;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1024,7 +1022,6 @@ h2 {
         background-size: 15%; }
       .testimonials .testimonial-item .testimonials-review .testimonials-review-item p {
         font-size: 1.125rem;
-        font-weight: 400;
         color: #999999;
         margin-left: 18%;
         margin-top: 5%; }
@@ -1039,7 +1036,7 @@ h2 {
 
 @media screen and (min-height: 800px) {
   .testimonials {
-    height: 65vh; } }
+    height: 60vh; } }
 
 @media screen and (max-width: 849px) {
   .testimonials {
@@ -1120,21 +1117,18 @@ h2 {
       .team-section .team-block .team-block-item h3 {
         padding-top: 10px;
         font-size: 1.875rem;
-        font-weight: 500;
         text-align: left;
         line-height: 26px; }
       .team-section .team-block .team-block-item h4 {
         font-size: 1.125rem;
-        font-family: OpenSans-Light, sans-serif;
         font-style: italic;
-        font-weight: normal;
+        font-weight: 300;
         color: #666666;
         padding: 8px 0 10px 0; }
       .team-section .team-block .team-block-item p {
         color: #333333;
         font-size: 0.93rem;
-        line-height: 25px;
-        font-family: OpenSans-Light, sans-serif; }
+        line-height: 25px; }
       .team-section .team-block .team-block-item:first-of-type {
         background: transparent url("../img/team-section/team-block-item/image1.png") left top no-repeat; }
       .team-section .team-block .team-block-item:nth-of-type(2) {
@@ -1235,7 +1229,6 @@ h2 {
         padding-left: 15px;
         margin-bottom: 15px;
         font-size: 1.125rem;
-        font-family: OpenSans-Light, sans-serif;
         width: 302px;
         height: 39px;
         border: none; }
@@ -1243,7 +1236,6 @@ h2 {
         padding-top: 10px;
         padding-left: 15px;
         font-size: 1.125rem;
-        font-family: OpenSans-Light, sans-serif;
         background-color: #fbfbfb;
         resize: none;
         width: 100%;
@@ -1270,9 +1262,7 @@ h2 {
       flex-flow: column wrap; }
       .feedback .container .feedback-contacts h3 {
         font-size: 1.56rem;
-        font-family: OpenSans-Light;
         padding-left: 40px;
-        font-weight: normal;
         margin-bottom: 15px; }
       .feedback .container .feedback-contacts .our-address .address, .feedback .container .feedback-contacts .our-address .phone, .feedback .container .feedback-contacts .our-address .email {
         display: -webkit-box;
@@ -1283,12 +1273,11 @@ h2 {
         width: 30%;
         font-size: 1.125rem;
         color: black;
-        font-family: OpenSans-Bold, sans-serif;
+        font-weight: 400;
         line-height: 24px; }
       .feedback .container .feedback-contacts .our-address .text {
         width: 70%;
         font-size: 1.125rem;
-        font-family: OpenSans-Light, sans-serif;
         color: #999999;
         line-height: 25px; }
       .feedback .container .feedback-contacts .contacts-address h3 {
@@ -1298,7 +1287,6 @@ h2 {
         background: transparent url("../img/feedback/feedback-contacts/IconAbout.png") left 5px no-repeat; }
       .feedback .container .feedback-contacts p {
         font-size: 1.125rem;
-        font-family: OpenSans-Light, sans-serif;
         color: #999999;
         line-height: 25px; }
 
@@ -1402,8 +1390,7 @@ h2 {
         background-image: url("../img/team-section/team-block-social/dribbble.png"); }
     .footer .footer-main p {
       font-size: 0.95rem;
-      color: #999999;
-      font-family: OpenSans-Light, sans-serif; }
+      color: #999999; }
 
 @media screen and (max-width: 849px) {
   .footer p {

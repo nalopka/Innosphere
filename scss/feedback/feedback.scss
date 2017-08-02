@@ -20,7 +20,6 @@
 				padding-left: 15px; 
 				margin-bottom: 15px;
 				font-size: 1.125rem;
-				font-family: OpenSans-Light, sans-serif;
 				width: 302px;
 				height: 39px;
 				border: none;
@@ -29,7 +28,6 @@
 				padding-top: 10px;
 				padding-left: 15px; 
 				font-size: 1.125rem;
-				font-family: OpenSans-Light, sans-serif;
 				background-color: rgba(251, 251, 251, 1);
 				resize: none;
 				width: 100%;
@@ -52,24 +50,21 @@
 			flex-flow: column wrap;
 			h3 {
 				font-size: 1.56rem;
-				font-family: OpenSans-Light;
 				padding-left: 40px;
-				font-weight: normal;
 				margin-bottom: 15px;	
 			}
 			.our-address {
-					.address, .phone, .email { display: flex}
+					.address, .phone, .email { display: flex;}
 					.title {
 						width: 30%;
 						font-size: 1.125rem;
 						color: black;
-						font-family: OpenSans-Bold, sans-serif;
+						font-weight: 400;
 						line-height: 24px;
 						}
 					.text {
 						width: 70%;
 						font-size: 1.125rem;
-						font-family: OpenSans-Light, sans-serif;
 						color: $grey;
 						line-height: 25px;
 					}
@@ -79,7 +74,6 @@
 			
 			p {
 				font-size: 1.125rem;
-				font-family: OpenSans-Light, sans-serif;
 				color: $grey;
 				line-height: 25px;
 			}
