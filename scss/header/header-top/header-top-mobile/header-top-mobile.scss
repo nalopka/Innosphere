@@ -1,16 +1,19 @@
 .header-top-mobile {
 	display: none;
+	font-family: OpenSans, sans-serif;
+	
 }
 @include mq("tablet-wide", max) {
 	.header-top-mobile {
 		height: 15%;
 		background-color: $p_lightblack;
-		display: flex;	
+		display: flex;
+		justify-content: space-between;	
 	}
 }
-@import "menu";
-@import "search";
-@import "about";
+	@import "menu";
+	@import "search";
+	@import "about";
 
 .active {
 	display: flex;

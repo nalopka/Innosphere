@@ -1,0 +1,36 @@
+.container {
+	width: 990px;
+	margin: 0 auto;
+	}
+.pink-button {
+	position: absolute;
+	background-color: $pink;
+	border: none;
+	color: $white;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 0.75rem;
+	border-bottom: 3px solid #db577e;
+	&:hover { background-color: #db577e; }
+}
+.upper-text {
+	text-transform: uppercase;
+}
+h2 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.875rem;
+}
+
+.social-tw {
+	background-image: url('../img/team-section/team-block-social/twitter.png');
+}
+.social-fb {
+	background-image: url('../img/team-section/team-block-social/facebook.png');
+}
+.social-pin {
+	background-image: url('../img/team-section/team-block-social/pinterest.png');
+}
+.social-db {
+	background-image: url('../img/team-section/team-block-social/dribbble.png');
+}

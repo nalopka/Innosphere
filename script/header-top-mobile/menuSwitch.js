@@ -15,7 +15,7 @@ $(document).ready(function(){
    
 });
 $(document).ready(function(){ 
-	$("body").on("click", ".menu-container", function(){
+	$("body").on("click", ".menu", function(){
 		$(this).toggleClass("change");
 	});
 });

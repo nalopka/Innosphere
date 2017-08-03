@@ -1,5 +1,6 @@
 @include mq("850", max) {
 	.search {
+		padding-top: 50px;
 		height: auto;
 		form {
 			.form-item {

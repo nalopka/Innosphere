@@ -1,4 +1,4 @@
-// @media внизу
+
 .team-section {
 	height: 100vh;
 	display: flex;
@@ -9,12 +9,8 @@
 		align-items: center;
 		flex-direction: column;
 		h2 {
-		margin-top: 5%;
-		margin-bottom: 5%;
-		font-size: 1.875rem;
-		font-family: OpenSans-Light;
-		text-align: center;
-		font-weight: normal;
+		padding-top: 5%;
+		padding-bottom: 5%;
 		}
 	}
 	.team-block {
@@ -26,17 +22,15 @@
 			padding-top: 200px;
 			width: 32%;
 			h3 {
-				margin-top: 10px;
+				padding-top: 10px;
 				font-size: 1.875rem;
-				font-family: OpenSans-Semibold;
 				text-align: left;
 				line-height: 26px;
 			}
 			h4 {
 				font-size: 1.125rem;
-				font-family: OpenSans-Light;
 				font-style: italic;
-				font-weight: normal;
+				font-weight: 300;
 				color: $contacts_grey;
 				padding: 8px 0 10px 0;
 			}
@@ -44,31 +38,24 @@
 				color: $p_lightblack;
 				font-size: 0.93rem;
 				line-height: 25px;
-				font-family: OpenSans-Light;
 			}
-			&:first-of-type {background:transparent url('../img/team-section/team-block-item/image1.png') left top no-repeat;}
-
-			&:nth-of-type(2) {background:transparent url('../img/team-section/team-block-item/image2.png') left top no-repeat;}
-			
-			&:last-of-type { background:transparent url('../img/team-section/team-block-item/image3.png') left top no-repeat;}
+			&:first-of-type {background: transparent url('../img/team-section/team-block-item/image1.png') left top no-repeat;}
+			&:nth-of-type(2) {background: transparent url('../img/team-section/team-block-item/image2.png') left top no-repeat;}
+			&:last-of-type { background: transparent url('../img/team-section/team-block-item/image3.png') left top no-repeat;}
 		
 		.team-block-social {
 			position: absolute;
 			bottom: -60px;
 			a {
-					margin-right: 10px;
-				 	display: inline-block;
-				 	width: 40px;
-				 	height: 40px;
-				 	background-color: $white;
-				 	background-repeat: no-repeat;
-				 	background-size: 100%;
+				margin-right: 10px;
+			 	display: inline-block;
+			 	width: 40px;
+			 	height: 40px;
+			 	background-color: $white;
+			 	background-repeat: no-repeat;
+			 	background-size: 100%;
 			}
-			a:first-of-type { background-image: url('../img/team-section/team-block-social/twitter.png'); }
-			a:nth-of-type(2) { background-image: url('../img/team-section/team-block-social/facebook.png'); }
-			a:nth-of-type(3) { background-image: url('../img/team-section/team-block-social/pinterest.png'); }
-			a:last-of-type { background-image: url('../img/team-section/team-block-social/dribbble.png'); }
-			}
+		}
 		}
 	}
 }

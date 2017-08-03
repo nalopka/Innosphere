@@ -1,95 +1,80 @@
 .features { 	
-	height: 100vh;
+	height: auto;
+	padding-bottom: 50px;
 	.features-header {
-		margin-top: 10%;
-		h2 {
-			margin-bottom: 5%;
-			text-align: center;
-			color: $text-black;
-			font-family: OpenSans-Light;
-			font-weight: normal;
-			font-size: 1.56rem;
-		}
+		padding-top: 10%;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		h2 { padding-bottom: 5%;}
 		p {
 			font-size: 1.125rem;
-			font-family: OpenSans-Light;
 			text-align: center;
 		}
 	}
 	.features-photobox {
 		position: relative;
 		h2 {
-			margin-top: 5%;
-			text-align: center;
-			font-family: OpenSans-Light;
-			font-weight: normal;
-			font-size: 1.875rem;
+			padding-top: 5%;
 		}
 		.photobox {
 			display: flex;
 			justify-content: space-between;
-			margin-top: 5%;
+			padding-top: 5%;
 			height: 372px;
-			.photobox-block1 {
+
+			// FIRST
+			.photobox-block:first-of-type {
 				position: relative;
 				@include flexbox("", space-between, column);
 				width: 285px;
 				height: 100%;
-				.photobox-item1 {
-					position: relative;
-					background: $white url("../img/features/photobox/photobox-block1/image1.png") 0 0 no-repeat;
-					width: 100%;
-					height: 48%;	
-				}
-				.photobox-item2 {
-					background: $white url("../img/features/photobox/photobox-block1/image2.png") 0 0 no-repeat;
-					width: 100%;
-					height: 48%;
-				}
+				.photobox-item {width: 100%; height: 49%; position: relative;}
+				.photobox-item:first-of-type {	background: $white url("../img/features/photobox/photobox-block1/image1.png") 0 0 no-repeat;}
+				.photobox-item:last-of-type { background: $white url("../img/features/photobox/photobox-block1/image2.png") 0 0 no-repeat;}
 			}
-			.photobox-block2 {
+			// -----
+
+			// SECOND
+			.photobox-block:nth-of-type(2) {
 				width: 390px;
 				height: 100%;
-				.photobox-item1 {
+				.photobox-item {
 					height: 100%;
 					width: 100%;	
 					background: $white url("../img/features/photobox/photobox-block2/image1.png") left top no-repeat;
 				}
 			}
-			.photobox-block3 {
+			// ----
+
+			// THIRD
+			.photobox-block:nth-of-type(3) {
 				width: 105px;
 				height: 100%;
-				.photobox-item1 {
+				.photobox-item {
 					height: 100%;
 					width: 100%;
 					background: $white url("../img/features/photobox/photobox-block3/image1.png") 0 0 no-repeat;
 				}
 			}
-			.photobox-block4 {
+			// -----
+
+			// FOUR
+			.photobox-block:last-of-type {
 				display: flex;
 				justify-content: space-between;
 				flex-direction: column;
 				width: 185px;
 				height: 100%;
-				.photobox-item1 {
-					height: 49%;
-					width: 100%;
-					background: $white url("../img/features/photobox/photobox-block4/image1.png") 0 0 no-repeat;
-				}
-				.photobox-item2 {
-					height: 49%;
-					width: 100%;
-					background: $white url("../img/features/photobox/photobox-block4/image2.png") 0 0 no-repeat;
-				}
+				.photobox-item {width: 100%; height: 49%; position: relative;}
+				.photobox-item:first-of-type { background: $white url("../img/features/photobox/photobox-block4/image1.png") 0 0 no-repeat;}
+				.photobox-item:last-of-type { background: $white url("../img/features/photobox/photobox-block4/image2.png") 0 0 no-repeat;}
 			}
-			.photobox-item1,
-			.photobox-item2 {
+			// -----
+
+			.photobox-item {
 				position: relative;
-				&:hover {
-						.addition {
-							opacity: 1;
-						}
-					}
+				&:hover { .addition { opacity: 1;} }
 			}
 		}
 		button {
@@ -116,8 +101,9 @@
 		p { 
 			font-size: 0.85rem;
 			padding-left: 10%; }
-		p:first-of-type {
-			font-family: OpenSans-Light;
+		p:last-of-type {
+			font-style: italic;
+			font-weight: 300;
 		}
 }
 

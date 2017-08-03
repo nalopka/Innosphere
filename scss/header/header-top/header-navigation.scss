@@ -6,27 +6,29 @@
 		justify-content: space-between;
 		.nav-menu {
 			width: 85%;
+			height: 100%;
 			ul {
 			list-style: none;
 			height: 100%;
 			display: flex;
 			justify-content: space-around;
 				li {
+					height: 100%;
 					a {
-						padding-top: 19px;
-						padding-bottom: 15px;
+						height: 100%;
 						position: relative;
 						display: flex;
 						align-items: center;
 						justify-content: space-around;
-						font-family: OpenSans-Regular;
 						text-decoration: none;
 						font-weight: 600;
 						color: $white;
 						font-size: 0.81rem;
 						&:hover {
 							color: $pink;
-							border-bottom: 3px solid $pink;
+							&:before {
+								@extend .active-link:before;
+							}
 						}
 					}
 				}
@@ -62,6 +64,15 @@
 		}
 	}
 .active-link {
-	border-bottom: 3px solid $pink;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		left: -10%;
+		bottom: 0;
+		width: 120%;
+		height: 3px;
+		background-color: $pink;
+	}
 }
 

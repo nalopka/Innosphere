@@ -10,7 +10,7 @@
 		align-items: center;
 		flex-flow: column wrap;
 		.footer-links {
-			margin-bottom: 5px;
+			padding-bottom: 5px;
 			a {
 				display: inline-block;
 				height: 40px;
@@ -19,16 +19,10 @@
 				background-size: cover;
 				margin-right: 10px;
 			}
-			a:first-of-type { background-image: url('../img/team-section/team-block-social/twitter.png'); }
-			a:nth-of-type(2) { background-image: url('../img/team-section/team-block-social/facebook.png'); }
-			a:nth-of-type(3) { background-image: url('../img/team-section/team-block-social/pinterest.png'); }
-			a:last-of-type { background-image: url('../img/team-section/team-block-social/dribbble.png'); }
-
 		}
 		p {
 			font-size: 0.95rem;
 			color: #999999;
-			font-family: OpenSans-Light;
 		}
 	}
 }

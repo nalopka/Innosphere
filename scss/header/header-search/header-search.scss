@@ -2,6 +2,7 @@
 	position: absolute;
 	width: 315px;
 	height: 55px;
+	left: 0;
 	bottom: 0;
 	background-color: $light-black;
 	a {
@@ -11,12 +12,12 @@
 		padding-left: 10%;
 		color: $white;
 		text-decoration: none;	
-		font-family: OpenSans-Bold;
 		height: 100%;
+		font-weight: 600;
 		width: 90%;
 		&:before {
 			left: 0;
-			background: url("../img/header/header-search/search-white.svg") center no-repeat;
+			background: url("../img/header/header-search/search-white2.png") center no-repeat;
 			position: absolute;
 			content: "";
 			width: 55px;

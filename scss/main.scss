@@ -6,20 +6,21 @@ p, h1, h2, h3, h4, span {
 	cursor: default;
 }
 html {
+	line-height: 1.4;
 	font-size: 16px;
+	font-family: Open Sans, sans-serif;
+	font-weight: 300;
 }
 
-.container {
-		width: 990px;
-		margin: 0 auto;
-	}
 
-@import "../UI/fonts/fonts";
-@import "../UI/color/color";
-@import "../UI/decor_elements/buttons";
+
+
+@import "UI/fonts";
+@import "UI/color";
 @import "mixins";
+@import "main-style";
 
-
+@import "fixed-menu/fixed-menu";
 @import "header/header";
 @import "search/search";
 @import "features/features";

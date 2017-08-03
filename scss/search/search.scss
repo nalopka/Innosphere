@@ -1,16 +1,17 @@
 .search {
-	margin-top: 50px;
 	height: 220px;
 	display: flex;
 	align-items: center;
+	font-family: OpenSans, sans-serif;
 	form {
 		width: 100%;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		justify-content: space-between;
+		label {display: block;}
 		label, p {
-			font-family: OpenSans-Semibold;
+			font-weight: 600;
 			font-size: 0.81rem;
 		}
 		.form-item {
@@ -27,9 +28,10 @@
 					border-radius: 0;
 					width: 223px;
 					height: 28px;
+					color: #b3b3b3;
 					border-color: #b3b3b3;
 					padding-left: 13px;
-					font-family: OpenSans-Regular;
+					font-weight: 400;
 					-webkit-appearance: none;
 					appearance: none;
 					}
@@ -40,7 +42,6 @@
 						background-color: #2f343a;
 						color: white;
 					}
-
 				}
 				.adult-content-item {
 					display: inline-flex;
