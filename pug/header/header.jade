@@ -1,17 +1,21 @@
-header#header.header
+<header class="header" id="header">
 
   include header-top-mobile/header-top-mobile.jade
 
-  .container
+  <div class="container">
 
-    include header-top.jade 
-    
-    .header-main
-      .header-main-text
-        h2 Your beautiful handcrafted stock photography marketplace.
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nulla facere, fugit ab quod id pariatur
-      button.pink-button KNOW MORE
-    #search-button.header-search
-      a(href='#search-button') SEARCH ALL GALLERIES
+    include header-top.jade
 
+    <div class="header-main">
+      <div class="header-main-text">
+        <h2>Your beautiful handcrafted stock photography marketplace.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nulla facere, fugit ab quod id pariatur</p>
+      </div>
+      <button class="pink-button">KNOW MORE</button>
+    </div>  
+    <div class="header-search" id="search-button">
+      <a href="#search-button">SEARCH ALL GALLERIES</a>
+    </div>
+  </div>
+  
+</header>

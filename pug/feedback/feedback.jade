@@ -1,27 +1,36 @@
-section#feedback.feedback.section
-  h2 Get in touch with us
-  .container
-    form(action='')
-      input(type='text', placeholder='First Name')
-      input(type='text', placeholder='Last Name')
-      input(type='email', placeholder='E-mail')
-      input(type='tel', placeholder='Phone Number')
-      textarea#feedback-message(name='feedback-message', placeholder='Message')
-      button.pink-button SEND MESSAGE
-    .feedback-contacts
-      .contacts-address
-        h3 Our Address
-        .our-address
-          .address
-            .title Address:
-            .text 3497 Gateway Road Portland QR 97217
-          .phone
-            .title Phone:
-            .text (229) 503-123-5434
-          .email
-            .title Email:
-            .text www.mobilecom.com
-      .contacts-about
-        h3 About us
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, velit?
-
+<section class="feedback section" id="feedback">
+  <h2>Get in touch with us</h2>
+  <div class="container">
+    <form action="">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="email" placeholder="E-mail">
+      <input type="tel" placeholder="Phone Number">
+      <textarea name="feedback-message" id="feedback-message" placeholder="Message"></textarea>
+      <button class="pink-button">SEND MESSAGE</button>
+    </form>
+    <div class="feedback-contacts">
+      <div class="contacts-address">
+        <h3>Our Address</h3>
+        <div class="our-address">
+          <div class="address">
+            <div class="title">Address:</div>
+            <div class="text">3497 Gateway Road Portland QR 97217</div>
+          </div>
+          <div class="phone">
+            <div class="title">Phone:</div>
+            <div class="text">(229) 503-123-5434</div>
+          </div>
+          <div class="email">
+            <div class="title">Email:</div>
+            <div class="text">www.mobilecom.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-about">
+        <h3>About us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, velit?</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,37 +1,41 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCjlxXUJqoZBod7l-7Mym8sqUz-DvCXeCE&callback=myMap', async='', defer='')
-  script(src='script/in-view.min.js')
-  link(rel='stylesheet', href='css/main.css')
-  meta(name='viewport', content='width=device-width')
-  meta(name='format-detection', content='telephone=no') 
-  //- turn off highlights numbers on mobile
-  title Innosphere
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjlxXUJqoZBod7l-7Mym8sqUz-DvCXeCE&callback=myMap" async defer></script>
+  <script src="script/in-view.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no">
+  <title>Innosphere</title>
+</head>
 
-  body
+<body>
 
-    include fixed-menu/fixed-menu.jade
-    include header/header.jade
-    include search/search.jade
-    include features/features.jade
-    include about-photography/about-photography.jade
-    include testimonials/testimonials.jade
-    include team-section/team-section.jade
+  include fixed-menu/fixed-menu.jade
+  include header/header.jade
+  include search/search.jade
+  include features/features.jade
+  include about-photography/about-photography.jade
+  include testimonials/testimonials.jade
+  include team-section/team-section.jade
 
-    section#map.location-map(onload='myMap')
+  <section class="location-map" id="map" onload="myMap"></section>
 
-    include feedback/feedback.jade
-    include footer/footer.jade
-    script(src='script/header-top-mobile/menuClose.js')
-    script(src='script/testimonials/slider.js')
-    script(src='script/header-top-mobile/menuSwitch.js')
-    script(src='script/location-map/location-map.js')
-    script(src='script/smoothscroll.js')
-    script(src='script/fixed-menu/fixedInView.js')
+  include feedback/feedback.jade
+  include footer/footer.jade
 
+  <script src="script/header-top-mobile/menuClose.js"></script>
+  <script src="script/testimonials/slider.js"></script>
+  <script src="script/header-top-mobile/menuSwitch.js"></script>
+  <script src="script/location-map/location-map.js"></script>
+  <script src="script/smoothscroll.js"></script>
+  <script src="script/fixed-menu/fixedInView.js"></script>
+
+</body>
+</html>
 
 
 
