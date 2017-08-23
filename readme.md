@@ -1,4 +1,6 @@
-Мобильная версия
+http://cherrybeard.ru/innosphere/
+
+Мобильная версия.
 
 Scss, pug
 
